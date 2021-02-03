@@ -1,11 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Arizonia&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    font-family: 'Playfair Display SC', serif;
+    font-family: 'Lato', sans-serif;
     background-color: #F7F2F2;
 }
 
 h1 {
+    font-family: 'Playfair Display SC', serif;
     font-weight: bold;
 }
 
@@ -17,10 +22,21 @@ hr {
     background-color: #FF5B00;
 }
 
+.initial-letter {
+    font-size: 25px;
+    font-weight: bold;
+    color: #FF5B00;
+}
+
 /* ----------------------------------Navbar */
 .navbar {
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    border-bottom: 1px solid #FF5B00;
 }
 
 nav a h1 {
@@ -31,7 +47,6 @@ nav a h1 {
 
 nav {
     background-color: #F7F2F2;
-    /* position: fixed; */
 }
 
 nav .nav-height {
@@ -39,17 +54,19 @@ nav .nav-height {
 }
 
 nav ul {
-    padding-right: 20px;
+    padding-right: 40px;
 }
 
 nav ul .nav-link {
     font-weight: 600;
     padding: 10px 0 0 0;
     height: 40px;
+    background-color: #F7F2F2;
+    letter-spacing: 2px;
 }
 
 nav button {
-    margin: 5px 5px 0 0;
+    margin: 5px 35px 5px 0;
 }
 
 .active {
@@ -65,9 +82,88 @@ nav .dropdown-item:hover {
     background-color: #FF5B00;
 }
 
+/* ----------------------------------Hero img*/
+.hero-container {
+    background: url('../images/hero-img-home.jpg') center/cover no-repeat;
+    width: 100%;
+    height: 600px;
+}
+
+/* ----------------------------------middle content*/
+.md-content-img {
+    height: 400px;
+    filter: drop-shadow(3px 6px 9px #636161);
+}
+
+#first-md-content-img {
+    margin: 30px 0 0 25px;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+#second-md-content-img {
+    position: absolute;
+    top: 50px;
+    left: 280px;
+    border: 1px solid #F7F2F2;
+}
+
+section .md-content .col-2 {
+    padding: 0;
+}
+
+#text-md-content {
+    margin: 130px 0 0 30px;
+    padding-left: 5px;
+    border-left: 3px solid #FF5B00;
+    border-radius: 5%;
+    color: #2d3436;
+    font-weight: 100;
+    background-color: #dfe6e9;
+}
+
+.profile_photo_mdContent {
+    margin: 250px 0 0 60px;
+}
+
+.profile_photo_mdContent h2 {
+    margin-bottom: 0;
+    text-align: center;
+    color: #2d3436;
+    font-size: medium;
+}
+
+#profile_photo_homePg {
+    width: 400px;
+    height: 420px;
+    border-radius: 1%;
+    filter: drop-shadow(3px 6px 9px #636161);
+}
+
+#marco_quote {
+    height: 150px;
+    margin: 80px 0 0 50px;
+    border-left: 3px solid #FF5B00;
+    border-right: 3px solid #FF5B00;
+    border-radius: 5%;
+    text-align: center;
+    background-color: #dfe6e9;
+}
+
+#marco_quote p {
+    margin-top: 50px;
+    color: #2d3436;
+}
+
 /* ----------------------------------Footer */
 footer {
-    margin-top: 10px;
+    margin-top: 30px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #FF5B00;
 }
 
 footer i {
@@ -82,7 +178,6 @@ footer p {
     text-align: center;
     font-size: 35px;
     margin-bottom: 10px;
-    color: #FF5B00;
 }
 
 .footer-copyright {
@@ -92,9 +187,20 @@ footer p {
     color: #FF5B00;
 }
 
+footer a:hover {
+    color: #ef5500;
+    text-decoration: none;
+}
+
 /* ----------------------------------Media queries */
 
-@media screen and (max-width: 425px) {
+@media screen and (min-width: 768px) {
+    nav button {
+       margin: 5px 50px 5px 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
     nav a h1 {
         font-size: 18px;
     }
