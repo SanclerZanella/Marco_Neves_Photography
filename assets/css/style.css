@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+
+body {
+    font-family: 'Playfair Display SC', serif;
+    background-color: #F7F2F2;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+hr {
+    width: 30%;
+    height: 2px;
+    border-radius: 50%;
+    margin-bottom: 0;
+    background-color: #FF5B00;
+}
+
+/* ----------------------------------Navbar */
+.navbar {
+    padding: 0px;
+    margin: 0px;
+}
+
+nav a h1 {
+    font-size: 25px;
+    padding-left: 10px;
+    margin: 0;
+}
+
+nav {
+    background-color: #F7F2F2;
+    /* position: fixed; */
+}
+
+nav .nav-height {
+    height: 40px;
+}
+
+nav ul {
+    padding-right: 20px;
+}
+
+nav ul .nav-link {
+    font-weight: 600;
+    padding: 10px 0 0 0;
+    height: 40px;
+}
+
+nav button {
+    margin: 5px 5px 0 0;
+}
+
+.active {
+    text-decoration: underline;
+}
+
+nav ul .nav-link:hover {
+    background-color: #FF5B00;
+    font-weight: bold;
+}
+
+nav .dropdown-item:hover {
+    background-color: #FF5B00;
+}
+
+/* ----------------------------------Footer */
+footer {
+    margin-top: 10px;
+}
+
+footer i {
+    padding-left: 10px;
+}
+
+footer p {
+    margin: 0;
+}
+
+.social-icons {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 10px;
+    color: #FF5B00;
+}
+
+.footer-copyright {
+    font-size: 10px;
+    text-align: center;
+    font-weight: bold;
+    color: #FF5B00;
+}
+
+/* ----------------------------------Media queries */
+
+@media screen and (max-width: 425px) {
+    nav a h1 {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    nav a h1 {
+        font-size: 14.5px;
+    }
+}
