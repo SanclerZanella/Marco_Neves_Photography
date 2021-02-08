@@ -1,16 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Arizonia&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 html {
     scroll-behavior: smooth;
 }
 
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     background-color: #F7F2F2;
 }
 
 h2 {
-    font-family: 'Playfair Display SC', serif;
+    font-weight: 800;
 }
 
 hr {
@@ -34,19 +34,21 @@ hr {
 }
 
 /* ----------------------------------Navbar */
+
 .navbar {
     padding: 0;
     margin: 0;
     border: 0;
     width: 100%;
+    height: 80px;
     position: fixed;
-    z-index: 1;
+    z-index: 20;
     border-bottom: 1px solid #FF5B00;
 }
 
 .logo {
-    height: 50px;
-    width: 400px;
+    height: 70px;
+    width: 150px;
     margin-left: 10px;
 }
 
@@ -60,22 +62,27 @@ nav .nav-height {
 
 nav ul {
     padding-right: 40px;
+    width: 115%;
 }
 
 nav ul .nav-link {
     font-weight: 600;
     padding: 20px 0 0 0;
-    height: 60px;
+    height: max-content;
     background-color: #F7F2F2;
     letter-spacing: 2px;
 }
 
-nav button {    
+nav button {
     margin: 5px 35px 5px 0;
 }
 
 .active {
     text-decoration: underline;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+    background-color: #FF5B00;
 }
 
 nav ul .nav-link:hover {
@@ -87,15 +94,27 @@ nav .dropdown-item:hover {
     background-color: #FF5B00;
 }
 
-/* ----------------------------------Hero img*/
-.hero-container {
-    background: url('../images/hero-img-home.jpg') center center/cover no-repeat fixed;
-    width: 100%;
-    height: 600px;
-    padding: 0;
+.navbar-lg-sc {
+    display: flex;
+}
+
+.navbar-lg-sc ul {
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    margin: auto 0;
+}
+
+.navbar-lg-sc li a {
+    height: 79px;
+}
+
+.navbar-lg-sc .dropdown-item {
+    height: 40px;
 }
 
 /* ----------------------------------middle content*/
+
 .md-content-img {
     height: 400px;
     filter: drop-shadow(3px 6px 9px #636161);
@@ -125,7 +144,6 @@ section .md-content .col-2 {
     border-left: 3px solid #FF5B00;
     border-radius: 5%;
     color: #2d3436;
-    font-weight: 100;
     background-color: #dfe6e9;
 }
 
@@ -134,7 +152,7 @@ section .md-content .col-2 {
 }
 
 .profile_photo_mdContent h1 {
-    margin-bottom: 0;
+    margin-bottom: 5px;
     text-align: center;
     color: #2d3436;
     font-size: medium;
@@ -142,9 +160,9 @@ section .md-content .col-2 {
 
 #profile_photo_homePg {
     width: 400px;
-    height: 420px;
-    border: 1px solid #F7F2F2;
-    border-radius: 1%;
+    height: 400px;
+    border: 1px solid #FF5B00;
+    border-radius: 100%;
     filter: drop-shadow(3px 6px 9px #636161);
 }
 
@@ -164,6 +182,7 @@ section .md-content .col-2 {
 }
 
 /* ----------------------------------Home Page Portfolio Links*/
+
 .portfolio-links {
     margin-top: 80px;
     border-top: 1px solid #FF5B00;
@@ -183,11 +202,11 @@ section .md-content .col-2 {
 
 #pre-wedding-link span {
     display: inline-block;
-    margin: 25px 0 0 30px;
+    margin: 25px 0 0 40px;
 }
 
 #wedding-link {
-    background: url("../images/wedding.jpeg") center center/cover no-repeat;
+    background: url("../images/wedding.png") center center/cover no-repeat;
     width: 100%;
     height: 500px;
 }
@@ -205,7 +224,7 @@ section .md-content .col-2 {
 
 #family-link span {
     display: inline-block;
-    margin: 25px 0 0 65px;
+    margin: 25px 0 0 75px;
 }
 
 #pre-wedding-link:hover {
@@ -226,32 +245,33 @@ section .md-content .col-2 {
     animation-fill-mode: forwards;
 }
 
-.portfolio-link-outer{
+.portfolio-link-outer {
     width: 100%;
-    overflow:hidden;
+    overflow: hidden;
     position: relative;
 }
 
 @keyframes hero-zoom {
-    from{
+    from {
         transform: scale(1);
     }
-    to{
+    to {
         transform: scale(1.1);
     }
 }
 
 /* ----------------------------------Testimonials*/
-#testimonials-section{
+
+#testimonials-section {
     margin-top: 50px;
 }
 
-#testimonials-section h2{
+#testimonials-section h2 {
     margin: 0 0 25px 20px;
 }
 
 #first-testimonial {
-    background: url("../images/couple1.jpg") center center/cover no-repeat;
+    background: url("../images/couple1.png") center center/cover no-repeat;
     width: 70%;
     height: 400px;
     margin: auto;
@@ -260,7 +280,7 @@ section .md-content .col-2 {
 }
 
 #second-testimonial {
-    background: url("../images/couple2.jpeg") center center/cover no-repeat;
+    background: url("../images/couple2.png") center center/cover no-repeat;
     width: 70%;
     height: 400px;
     margin: auto;
@@ -269,18 +289,18 @@ section .md-content .col-2 {
 }
 
 #third-testimonial {
-    background: url("../images/couple3.jpeg") center center/cover no-repeat;
+    background: url("../images/couple3.png") center center/cover no-repeat;
     width: 70%;
     height: 400px;
     margin: auto;
     border: 1px solid #F7F2F2;
-    filter: drop-shadow(3px 6px 9px #636161);   
+    filter: drop-shadow(3px 6px 9px #636161);
 }
 
 .testimonials {
     background-color: #ffffff;
     height: 320px;
-    width: 65%; 
+    width: 70%;
     margin: auto;
     border: 1px solid #F7F2F2;
     filter: drop-shadow(3px 6px 9px #636161);
@@ -301,11 +321,20 @@ section .md-content .col-2 {
     z-index: 2;
     top: 295px;
     left: 50px;
+    z-index: 1;
 }
 
 /* ----------------------------------Carousel Testimonials*/
+
+#carousel-testimonials-section {
+    margin-top: 25px;
+}
+
+#carousel-testimonials-section h2 {
+    margin: 0 0 15px 25px;
+}
+
 .carousel-photos {
-    margin-top: 50px;
     height: 550px;
     border-top: 1px solid #FF5B00;
     border-bottom: 1px solid #FF5B00;
@@ -323,9 +352,118 @@ section .md-content .col-2 {
     font-weight: bold;
 }
 
+/* ----------------------------------Instagram section */
+
+.eapps-instagram-feed-title {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* ----------------------------------Weddings Album Page */
+
+#weddings-album h2 {
+    font-weight: bold;
+    text-align: center;
+}
+
+#weddings-album p {
+    text-align: center;
+}
+
+#weddings-album-header {
+    margin-top: 70px;
+}
+
+.hovereffect {
+    width: 100%;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    cursor: default;
+}
+
+.hovereffect .overlay {
+    position: absolute;
+    overflow: hidden;
+    width: 70%;
+    height: 80%;
+    left: 10%;
+    top: 10%;
+    margin-left: 20px;
+    border-bottom: 1px solid #FFF;
+    border-top: 1px solid #FFF;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: scale(0, 1);
+    -ms-transform: scale(0, 1);
+    transform: scale(0, 1);
+}
+
+.hovereffect:hover .overlay {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+
+.hovereffect img {
+    width: 90%;
+    height: auto;
+    margin: 20px auto;
+    display: block;
+    position: relative;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+    border: 1px solid #F7F2F2;
+    filter: drop-shadow(3px 6px 9px #636161);
+}
+
+.hovereffect:hover img {
+    filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.6" /><feFuncG type="linear" slope="0.6" /><feFuncB type="linear" slope="0.6" /></feComponentTransfer></filter></svg>#filter');
+    filter: brightness(0.6);
+    -webkit-filter: brightness(0.6);
+}
+
+.hovereffect h2 {
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+    background-color: transparent;
+    color: #FFF;
+    padding: 1em 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+}
+
+.hovereffect a, .hovereffect p {
+    color: #FFF;
+    padding: 0.5em 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+}
+
+.hovereffect:hover a, .hovereffect:hover p, .hovereffect:hover h2 {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
 /* ----------------------------------Footer */
+
 footer {
-    margin-top: 30px;
+    margin-top: 25px;
 }
 
 footer a {
@@ -368,30 +506,25 @@ footer a:hover {
         height: 600px;
         padding: 0;
     }
-
     #text-md-content {
         height: 170px;
         width: 400px;
         margin: 150px 0 0 50px;
-        padding: 30px 0 30px 0; 
+        padding: 30px 0 30px 0;
     }
-
-    #text-md-content p{
+    #text-md-content p {
         margin-left: 5px;
     }
-
     #marco_quote {
-        height: 130px;
+        height: 150px;
         width: 500px;
         margin: 80px 50px 0 50px;
         padding: 0;
         flex: 0 0 0 0;
     }
-
-    #marco_quote p{
+    #marco_quote p {
         padding: 0;
     }
-
     #wedding-link span {
         display: inline-block;
         margin: 25px 0 0 300px;
@@ -405,16 +538,13 @@ footer a:hover {
         height: 600px;
         padding: 0;
     }
-
     #text-md-content {
         width: 245px;
-        height: 250px;
+        height: 260px;
     }
-
     #marco_quote {
-        height: 140px;
+        height: 180px;
     }
-
     #profile_photo_homePg {
         margin-left: 15px;
     }
@@ -423,29 +553,21 @@ footer a:hover {
 @media screen and (max-width: 768px) {
     nav button {
         margin: 5px 35px 5px 0;
-     }
-
-     #text-md-content {
-        height: 80px;
+    }
+    #text-md-content {
+        height: 90px;
         margin: 50px 15px 0 10px;
         padding-left: 5px;
         border-right: 3px solid #FF5B00;
     }
 
-    .hero-container {
-        background: url('../images/hero-img-home.jpg') center center/cover no-repeat;
-    }
-
     .md-content-img {
-
         filter: drop-shadow(3px 6px 9px #636161);
     }
-
     #first-md-content-img {
         margin-left: 130px;
         right: 400px;
     }
-
     #second-md-content-img {
         position: absolute;
         top: 50px;
@@ -455,56 +577,51 @@ footer a:hover {
 
 @media screen and (max-width: 480px) {
     .logo {
-        height: 40px;
-        width: 250px;
-        margin-left: 10px;  
+        height: 60px;
+        width: 200px;
+        margin-left: 10px;
     }
-
     .md-content-img {
         height: 300px;
         filter: drop-shadow(3px 6px 9px #636161);
     }
-
     #first-md-content-img {
         margin-left: 25px;
     }
-
     #second-md-content-img {
         position: absolute;
         top: 50px;
         left: 205px;
     }
-
     #text-md-content {
-        height: 120px;
+        height: 140px;
         margin: 50px 15px 0 10px;
         padding-left: 5px;
         border-right: 3px solid #FF5B00;
+    }
+    .hovereffect img {
+        margin-top: 10px;
     }
 }
 
 @media screen and (max-width: 375px) {
     nav button {
         margin: 5px 10px 5px 0;
-     }
-
+    }
     .md-content-img {
         height: 250px;
         filter: drop-shadow(3px 6px 9px #636161);
     }
-
     #first-md-content-img {
         margin-left: 25px;
     }
-
     #second-md-content-img {
         position: absolute;
         top: 45px;
         left: 180px;
     }
-
     #text-md-content {
-        height: 135px;
+        height: 165px;
         margin: 50px 15px 0 10px;
         padding-left: 5px;
         border-right: 3px solid #FF5B00;
@@ -512,38 +629,28 @@ footer a:hover {
 }
 
 @media screen and (max-width: 320px) {
-    .logo {
-        height: 40px;
-        width: 200px;
-        margin-left: 10px;  
-    }
-
     .md-content-img {
         height: 240px;
         filter: drop-shadow(3px 6px 9px #636161);
     }
-
     #first-md-content-img {
         display: none;
     }
-
     #second-md-content-img {
         width: 260px;
         height: 300px;
-        border: 1px solid  #F7F2F2;
+        border: 1px solid #F7F2F2;
         border-radius: 2%;
         position: relative;
         left: 0;
         top: 0;
         margin: 25px 0 0 25px;
     }
-
     #text-md-content {
-        height: 165px;
+        height: 185px;
     }
-
     .carousel-photos {
-        height: 400px;
+        height: 430px;
     }
 }
 
@@ -554,29 +661,19 @@ footer a:hover {
         margin: 100px 0 0 5px;
         height: 300px;
         padding-top: 50px;
-       
     }
-
     #text-md-content p {
         padding-left: 5px;
     }
-
     .profile_photo_mdContent {
         margin: 100px 0 0 60px;
     }
-
     #profile_photo_homePg {
         width: 500px;
         height: 520px;
     }
-
     #marco_quote {
         height: 150px;
         margin: 60px 0 0 50px;
     }
-    
 }
-
-
-
-
