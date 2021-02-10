@@ -32,6 +32,10 @@ hr {
     color: #FF5B00;
 }
 
+.container-fluid {
+    padding: 0;
+}
+
 /* ----------------------------------Navbar */
 
 .navbar {
@@ -357,25 +361,27 @@ section .md-content .col-2 {
     font-family: 'Montserrat', sans-serif;
 }
 
-/* ----------------------------------Weddings Album Page */
+/* ----------------------------------collection Album Page */
 
-#weddings-album .row{
+#collection-album .row {
     display: flex;
     justify-content: center;
     align-content: center;
 }
 
-#weddings-album h2 {
+#collection-album h2 {
     font-weight: bold;
     text-align: center;
 }
 
-#weddings-album p {
+#collection-album p {
     text-align: center;
 }
 
-#weddings-album-header {
+#collection-album-header {
     margin-top: 100px;
+    font-family: 'Arizonia', sans-serif;
+    font-size: 50px;
 }
 
 .hovereffect {
@@ -465,9 +471,91 @@ section .md-content .col-2 {
     transform: translate3d(0, 0, 0);
 }
 
+/* ----------------------------------Album Pages */
+
+.photo-container h2 {
+    margin-top: 150px;
+    text-align: center;
+    font-family: 'Arizonia', sans-serif;
+    font-size: 50px;
+}
+
+.photo-container p {
+    text-align: center;
+}
+
+.breadcrumb {
+    position: fixed;
+    background-color: #F7F2F2;
+    width: 100%;
+}
+
+.breadcrumb-album {
+    position: relative;
+    top: 80px;
+    z-index: 2;
+}
+
+#gallery .col-12 img {
+    max-height: 400px;
+    width: 100%;
+}
+
+.modal-content {
+    width: 1000px;
+    position: relative;
+    right: 250px;
+    background-color: rgba(0, 0, 0, .2);
+    background-clip: none;
+    border: 0;
+    border-radius: 0;
+}
+
+span[aria-hidden="true"] {
+    color: #FF5B00;
+    font-weight: 900;
+}
+
+.modal-content img {
+    height: 650px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.modal-body {
+    padding: 0;
+}
+
+.photos-hover:hover {
+    opacity: 0.7;
+}
+
+/* ----------------------------------Bio Page */
+
+#bio-header h2 {
+    margin-top: 100px;
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 50px;
+    color: #FF5B00;
+}
+
+#bio-header #hero {
+    background: url('../images/marco-family.jpg');
+    width: 100%;
+    height: 600px;
+}
+
+#bio-middle-content {}
+
+#bio-final-content {
+
+}
+
 /* ----------------------------------Footer */
 
 footer {
+    /* margin-top: 500px; */
     margin-top: 25px;
 }
 
@@ -540,7 +628,6 @@ footer a:hover {
     .signature {
         top: 375px;
         left: 20px;
-
     }
 }
 
@@ -593,11 +680,9 @@ footer a:hover {
         width: 200px;
         margin-left: 10px;
     }
-
-    .carousel-item img{
+    .carousel-item img {
         height: 450px;
     }
-
     .md-content-img {
         height: 300px;
         filter: drop-shadow(3px 6px 9px #636161);
