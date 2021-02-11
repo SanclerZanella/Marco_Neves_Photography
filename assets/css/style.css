@@ -595,6 +595,12 @@ span[aria-hidden="true"] {
     filter: drop-shadow(3px 6px 9px #636161);
 }
 
+/* ----------------------------------Contact Page */
+
+#contact-header h2 {
+    margin-top: 100px;
+}
+
 /* ----------------------------------Footer */
 
 footer {
@@ -643,9 +649,9 @@ footer a:hover {
         padding: 0;
     }
     #text-md-content {
-        height: 170px;
+        height: 350px;
         width: 400px;
-        margin: 150px 0 0 50px;
+        margin: 100px 0 0 50px;
         padding: 30px 0 30px 0;
     }
     #text-md-content p {
@@ -654,7 +660,7 @@ footer a:hover {
     #marco_quote {
         height: 150px;
         width: 500px;
-        margin: 80px 50px 0 50px;
+        margin: 50px 50px 0 50px;
         padding: 0;
         flex: 0 0 0 0;
     }
@@ -694,14 +700,24 @@ footer a:hover {
         padding: 0;
     }
     #text-md-content {
-        width: 245px;
-        height: 260px;
+        margin: 100px 0 0 80px;
+        width: 600px;
+        height: 200px;
+        padding-top: 0;
     }
     #marco_quote {
         height: 180px;
+        margin-top: 100px;
+    }
+    .profile_photo_mdContent {
+        margin-top: 350px;
+        margin-left: 30px;
     }
     #profile_photo_homePg {
-        margin-left: 15px;
+        margin-left: 40px;
+        margin-top: 5px;
+        width: 390px;
+        height: 390px;
     }
     #bio-profile-photo {
         width: 600px;
@@ -731,7 +747,7 @@ footer a:hover {
         margin: 5px 35px 5px 0;
     }
     #text-md-content {
-        height: 90px;
+        height: 160px;
         margin: 50px 15px 0 10px;
         padding-left: 5px;
         border-right: 3px solid #FF5B00;
@@ -799,7 +815,7 @@ footer a:hover {
         left: 205px;
     }
     #text-md-content {
-        height: 140px;
+        height: 300px;
         margin: 50px 15px 0 10px;
         padding-left: 5px;
         border-right: 3px solid #FF5B00;
@@ -857,7 +873,7 @@ footer a:hover {
         left: 180px;
     }
     #text-md-content {
-        height: 165px;
+        height: 340px;
         margin: 50px 15px 0 10px;
         padding-left: 5px;
         border-right: 3px solid #FF5B00;
@@ -901,7 +917,7 @@ footer a:hover {
         margin: 25px 0 0 25px;
     }
     #text-md-content {
-        height: 185px;
+        height: 400px;
     }
     #bio-middle-content p {
         margin: 25px 0 25px 50px;
@@ -919,9 +935,10 @@ footer a:hover {
 
 @media screen and (min-width: 1440px) {
     #text-md-content {
-        margin: 100px 0 0 5px;
-        height: 300px;
-        padding-top: 50px;
+        margin: 80px 0 0 5px;
+        width: 340px;
+        height: 350px;
+        padding-top: 0;
     }
     #text-md-content p {
         padding-left: 5px;
