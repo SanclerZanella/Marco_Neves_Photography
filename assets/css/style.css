@@ -541,15 +541,58 @@ span[aria-hidden="true"] {
 }
 
 #bio-header #hero {
-    background: url('../images/marco-family.jpg');
+    background: url('../images/marco-family.jpg') center center / cover no-repeat;
     width: 100%;
-    height: 600px;
+    height: 800px;
+    margin-top: 15px;
 }
 
-#bio-middle-content {}
+#introducing {
+    height: 190px;
+    margin: 0 30px;
+    border-left: 3px solid #FF5B00;
+    border-right: 3px solid #FF5B00;
+    border-radius: 5%;
+    text-align: center;
+    background-color: #dfe6e9;
+}
 
-#bio-final-content {
+#bio-middle-content p {
+    margin: 25px 0 25px 150px;
+    width: 70%;
+    text-align: center;
+}
 
+#bio-end-content {
+    margin-top: 25px;
+    text-align: right;
+}
+
+#bio-quote {
+    height: 470px;
+    margin: 50px 0 30px 30px;
+    border-right: 3px solid #FF5B00;
+    border-radius: 5%;
+    text-align: center;
+    background-color: #dfe6e9;
+}
+
+#bio-end-content p {
+    margin: 15px 0 0 50px;
+}
+
+#bio-end-content b {
+    color: #FF5B00;
+}
+
+#bio-profile-photo {
+    background: url('../images/bio-profile-photo.jpg') center center / cover no-repeat;
+    width: 500px;
+    height: 500px;
+    border-radius: 100%;
+    margin-left: 20px;
+    border: 1px solid #F7F2F2;
+    filter: drop-shadow(3px 6px 9px #636161);
 }
 
 /* ----------------------------------Footer */
@@ -629,6 +672,18 @@ footer a:hover {
         top: 375px;
         left: 20px;
     }
+    #introducing {
+        height: 220px;
+    }
+    #bio-quote {
+        height: 600px;
+    }
+    #bio-profile-photo {
+        width: 450px;
+        height: 600px;
+        border-radius: 3%;
+        margin-top: 50px;
+    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -647,6 +702,27 @@ footer a:hover {
     }
     #profile_photo_homePg {
         margin-left: 15px;
+    }
+    #bio-profile-photo {
+        width: 600px;
+        height: 600px;
+        margin-left: 20px;
+    }
+    #introducing {
+        height: 190px;
+    }
+    #bio-quote {
+        height: 490px;
+        margin-top: 100px;
+    }
+    #bio-profile-photo {
+        background: url('../images/bio-profile-photo.jpg') center center / cover no-repeat;
+        width: 600px;
+        height: 600px;
+        border-radius: 100%;
+        margin-left: 20px;
+        border: 1px solid #F7F2F2;
+        filter: drop-shadow(3px 6px 9px #636161);
     }
 }
 
@@ -671,6 +747,33 @@ footer a:hover {
         position: absolute;
         top: 50px;
         left: 360px;
+    }
+    #introducing {
+        height: 300px;
+    }
+    #bio-middle-content p {
+        margin: 25px 0 25px 100px;
+        width: 70%;
+        text-align: center;
+    }
+    #bio-end-content p {
+        margin: 15px 10px 0 10px;
+    }
+    #bio-quote {
+        height: 410px;
+        margin: 15px 30px 30px 30px;
+        border-left: 3px solid #FF5B00;
+        border-right: 3px solid #FF5B00;
+        border-radius: 5%;
+        text-align: center;
+        background-color: #dfe6e9;
+    }
+    #bio-profile-photo {
+        width: 100%;
+        height: 600px;
+        border-radius: 0;
+        margin: 0;
+        border-top: 1px solid #FF5B00;
     }
 }
 
@@ -704,6 +807,37 @@ footer a:hover {
     .hovereffect img {
         margin-top: 10px;
     }
+    #bio-header h2 {
+        font-size: 25px;
+    }
+    #bio-header #hero {
+        width: 100%;
+        height: 400px;
+        margin-top: 15px;
+    }
+    #introducing {
+        height: 570px;
+    }
+    #bio-middle-content p {
+        margin: 25px 0 25px 50px;
+        width: 70%;
+        text-align: center;
+    }
+    #bio-quote {
+        width: 95%;
+        height: 650px;
+        margin: 5px 10px 10px 10px;
+    }
+    #bio-end-content p {
+        margin: 0 10px 0 10px;
+    }
+    #bio-profile-photo {
+        width: 100%;
+        height: 600px;
+        border-radius: 0;
+        margin-top: 20px;
+        border-top: 3px solid #FF5B00;
+    }
 }
 
 @media screen and (max-width: 375px) {
@@ -728,6 +862,24 @@ footer a:hover {
         padding-left: 5px;
         border-right: 3px solid #FF5B00;
     }
+    #introducing {
+        height: 500px;
+    }
+    #bio-middle-content p {
+        margin: 25px 0 25px 50px;
+        width: 70%;
+        font-size: 14px;
+        text-align: center;
+    }
+    #bio-quote {
+        width: 95%;
+        height: 560px;
+        margin: 5px 10px 10px 10px;
+    }
+    #bio-end-content p {
+        margin: 0 10px 0 10px;
+        font-size: 14px;
+    }
 }
 
 @media screen and (max-width: 320px) {
@@ -750,6 +902,16 @@ footer a:hover {
     }
     #text-md-content {
         height: 185px;
+    }
+    #bio-middle-content p {
+        margin: 25px 0 25px 50px;
+        width: 70%;
+        font-size: 12px;
+        text-align: center;
+    }
+    #bio-end-content p {
+        margin: 0 10px 0 10px;
+        font-size: 13px;
     }
 }
 
@@ -774,5 +936,18 @@ footer a:hover {
     #marco_quote {
         height: 150px;
         margin: 60px 0 0 50px;
+    }
+    #bio-quote {
+        height: 490px;
+        margin-top: 130px;
+    }
+    #bio-profile-photo {
+        background: url('../images/bio-profile-photo.jpg') center center / cover no-repeat;
+        width: 650px;
+        height: 650px;
+        border-radius: 100%;
+        margin-left: 20px;
+        border: 1px solid #F7F2F2;
+        filter: drop-shadow(3px 6px 9px #636161);
     }
 }
