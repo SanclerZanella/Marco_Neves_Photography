@@ -36,6 +36,12 @@ hr {
     padding: 0;
 }
 
+.shadow {
+    -webkit-box-shadow: 3px 6px 9px 6px #636161;
+    -moz-box-shadow:    3px 6px 9px 6px #636161;
+    box-shadow:         3px 6px 9px 6px #636161;
+  }
+
 /* ----------------------------------Navbar */
 
 .navbar {
@@ -64,7 +70,6 @@ nav .nav-height {
 }
 
 nav ul {
-    padding-right: 40px;
     width: 115%;
 }
 
@@ -102,9 +107,9 @@ nav .dropdown-item:hover {
 }
 
 .navbar-lg-sc ul {
+    display: flex;
     justify-content: center;
     align-content: center;
-    display: flex;
     margin: auto 0;
 }
 
@@ -114,6 +119,11 @@ nav .dropdown-item:hover {
 
 .navbar-lg-sc .dropdown-item {
     height: 40px;
+}
+
+.flags img{
+    width: 30px;
+    height: 30px;
 }
 
 /* ----------------------------------middle content*/
@@ -599,12 +609,58 @@ span[aria-hidden="true"] {
 
 #contact-header h2 {
     margin-top: 100px;
+    color: #FF5B00;
+}
+
+#contact-form {
+    padding: 20px;
+}
+
+#form-container {
+    background: rgba(255, 91, 0, .8);
+    padding: 5px;
+    border: 2px solid #F7F2F2;
+    border-radius: 2%;
+    position: relative;
+    top: 0;
+    left: 50px;
+    z-index: 2;
+}
+
+#form-container label {
+    font-weight: 600;
+    color: #ffffff;
+}
+
+#form-container button {
+    background: #F7F2F2;
+    color: #FF5B00;
+    border: 1px solid #FF5B00;
+    font-weight: 600;
+}
+
+.contact-card {
+    background: url('../images/wedding.png') center center / cover no-repeat;
+    width: 100%;
+    height: 660px;
+    border: 2px solid #F7F2F2;
+    border-radius: 2%;
+    filter: drop-shadow(3px 6px 9px #636161);
+    position: absolute;
+    top: 165px;
+    left: 550px;
+}
+
+#form-container button:hover {
+    background: #FF5B00;
+    color: #F7F2F2;
+    border: 1px solid #F7F2F2;
+    font-weight: 700;
 }
 
 /* ----------------------------------Footer */
 
 footer {
-    /* margin-top: 500px; */
     margin-top: 25px;
 }
 
@@ -619,6 +675,19 @@ footer i {
 
 footer p {
     margin: 0;
+}
+
+.flags {
+    margin-left: 55px;
+}
+
+.flags img{
+    width: 30px;
+    height: 30px;
+}
+
+.translation {
+    margin-left: 550px;
 }
 
 .social-icons {
@@ -690,6 +759,20 @@ footer a:hover {
         border-radius: 3%;
         margin-top: 50px;
     }
+    #contact-form {
+        padding: 5px;
+    }
+    #form-container {
+        left: 30px;
+    }
+    .contact-card {
+        height: 733px;
+        top: 154px;
+        left: 470px;
+    }
+    .translation {
+        margin-left: 435px;
+    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -728,7 +811,7 @@ footer a:hover {
         height: 190px;
     }
     #bio-quote {
-        height: 490px;
+        height: 510px;
         margin-top: 100px;
     }
     #bio-profile-photo {
@@ -739,6 +822,22 @@ footer a:hover {
         margin-left: 20px;
         border: 1px solid #F7F2F2;
         filter: drop-shadow(3px 6px 9px #636161);
+    }
+    #contact-form {
+        margin-left: 20px;
+    }
+    .contact-card {
+        height: 700;
+        top: 154px;
+        left: 600px;
+    }
+    #form-container {
+        top: 0;
+        left: 15px;
+        z-index: 1;
+    }
+    .translation {
+        margin-left: 550px;
     }
 }
 
@@ -776,7 +875,7 @@ footer a:hover {
         margin: 15px 10px 0 10px;
     }
     #bio-quote {
-        height: 410px;
+        height: 430px;
         margin: 15px 30px 30px 30px;
         border-left: 3px solid #FF5B00;
         border-right: 3px solid #FF5B00;
@@ -790,6 +889,17 @@ footer a:hover {
         border-radius: 0;
         margin: 0;
         border-top: 1px solid #FF5B00;
+    }
+    #form-container {
+        padding: 10px;
+        border-radius: 2%;
+        position: relative;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+    .translation {
+        margin-left: 310px;
     }
 }
 
@@ -841,7 +951,7 @@ footer a:hover {
     }
     #bio-quote {
         width: 95%;
-        height: 650px;
+        height: 670px;
         margin: 5px 10px 10px 10px;
     }
     #bio-end-content p {
@@ -853,6 +963,12 @@ footer a:hover {
         border-radius: 0;
         margin-top: 20px;
         border-top: 3px solid #FF5B00;
+    }
+    #contact-form {
+        padding: 5px;
+    }
+    .translation {
+        margin-left: 130px;
     }
 }
 
@@ -889,12 +1005,15 @@ footer a:hover {
     }
     #bio-quote {
         width: 95%;
-        height: 560px;
+        height: 590px;
         margin: 5px 10px 10px 10px;
     }
     #bio-end-content p {
         margin: 0 10px 0 10px;
         font-size: 14px;
+    }
+    .translation {
+        margin-left: 110px;
     }
 }
 
@@ -928,6 +1047,12 @@ footer a:hover {
     #bio-end-content p {
         margin: 0 10px 0 10px;
         font-size: 13px;
+    }
+    #contact-form {
+        padding: 0;
+    }
+    .translation {
+        margin-left: 70px;
     }
 }
 
@@ -966,5 +1091,21 @@ footer a:hover {
         margin-left: 20px;
         border: 1px solid #F7F2F2;
         filter: drop-shadow(3px 6px 9px #636161);
+    }
+    #contact-form {
+        margin-left: 100px;
+    }
+    .contact-card {
+        height: 732px;
+        top: 154px;
+        left: 600px;
+    }
+    #form-container {
+        top: 0;
+        left: 15px;
+        z-index: 1;
+    }    
+    .translation {
+        margin-left: 640px;
     }
 }

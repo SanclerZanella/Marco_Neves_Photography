@@ -113,46 +113,45 @@
     </section>
 
     <section>
-        <div class="row no-gutters">
-            <div class="col-md-6">
-                <form class="needs-validation" name="contact" action="POST" data-netlify="true" novalidate>
+        <div id="contact-form" class="row no-gutters">
+            <div id="form-container" class="col-md col-lg-6 text-center shadow">
+                <form class="was-validated" name="contact" action="POST" data-netlify="true" novalidate>
                     <fieldset>
                         <div class="form-row">
-                            <div class="form-group col-auto">
+                            <div class="form-group col-md-6 col-lg-6">
                                 <label for="name-field">First name</label>
                                 <input type="text" class="form-control" placeholder="Enter your name" name="name"
                                     id="name-field" pattern="^[a-zA-Z0-9_.-]*$" required>
-                                <div class="invalid-feedback">
-                                    Please, Enter your name.
-                                </div>
                             </div>
 
-                            <div class="form-group col-auto">
+                            <div class="form-group col-md-6 col-lg-6">
                                 <label for="lastname-field">Last name</label>
                                 <input type="text" class="form-control" placeholder="Enter your Last Name"
                                     name="lastname" id="lastname-field" pattern="^[a-zA-Z0-9_.-]*$" required>
-                                <div class="invalid-feedback">
-                                    Please, Enter your last name.
-                                </div>
                             </div>
                         </div>
 
-                        <div class="form-group">
+                        <div class="form-row form-group">
                             <div class="col">
                                 <label for="email-field">Email</label>
                                 <input type="email" class="form-control" placeholder="Enter your email" name="email"
                                     id="email-field" required>
-                                <div class="invalid-feedback">
-                                    Please, Enter your email.
-                                </div>
                                 <small id="emailHelp" class="form-text text-muted">We'll never share your email with
                                     anyone
                                     else.</small>
                             </div>
                         </div>
 
+                        <div class="form-row form-group">
+                            <div class="col">
+                                <label for="phone-field">Phone Number</label>
+                                <input type="tel" class="form-control" placeholder="Enter your phone number"
+                                    name="phone" id="phone-field">
+                            </div>
+                        </div>
+
                         <div class="form-row">
-                            <div class="form-group col-4">
+                            <div class="form-group col-12 col-lg-4">
                                 <label for="kindevent-field">Kind of Event</label>
                                 <select name="kindofevent" class="form-control" id="kindevent-field" required>
                                     <option disabled selected value>-- select an event --</option>
@@ -161,17 +160,14 @@
                                     <option value="family">Family Photos</option>
                                     <option value="Other">Other</option>
                                 </select>
-                                <div class="invalid-feedback">
-                                        Please, Choose one option.
-                                    </div>
                             </div>
 
-                            <div class="form-group col-4">
+                            <div class="form-group col-12 col-lg-4">
                                 <label for="date-field">Date of your Event</label>
                                 <input type="date" class="form-control" name="eventdate" id="date-field">
                             </div>
 
-                            <div class="form-group col-4">
+                            <div class="form-group col-12 col-lg-4">
                                 <label for="localevent-field">Local of your Event</label>
                                 <input type="text" class="form-control" placeholder="Local of your event"
                                     name="eventlocal" id="localevent-field" pattern="^[a-zA-Z0-9_.-]*$">
@@ -182,9 +178,6 @@
                             <label for="extrainfo-field">Tell me more about your event</label><br>
                             <textarea name="extrainfo" class="form-control" id="extrainfo-field" cols="60" rows="10"
                                 pattern="^[a-zA-Z0-9_.-]*$" required></textarea>
-                            <div class="invalid-feedback">
-                                Please, Enter the details of you event.
-                            </div>
                         </div>
 
                         <div class="form-group">
@@ -194,16 +187,29 @@
                     </fieldset>
                 </form>
             </div>
+            <div class="d-none d-lg-block col-lg-6 contact-card"></div>
         </div>
     </section>
 
 
-    <!-- 8.Footer section: Includes Icons Links for Social media and Copyright and the grid system from Bootstrap 4 -->
+    <!-- 5.Footer section: Includes Icons Links for Social media, Copyright, google translation api and the grid system from Bootstrap 4 -->
 
     <footer class="container-fluid">
         <hr>
 
-        <!-- 8.1.Icons Links for Social Media -->
+        <!-- 5.1.Translate -->
+
+        <div class="row no-gutters">
+            <div class="translation">
+                <div class="flags">
+                    <span><img src="https://img.icons8.com/emoji/48/000000/united-kingdom-emoji.png" /></span><span><img
+                            src="https://img.icons8.com/emoji/48/000000/brazil-emoji.png" /></span>
+                </div>
+                <div id="google_translate_element_id"></div>
+            </div>
+        </div>
+
+        <!-- 5.2.Icons Links for Social Media -->
 
         <div class="row no-gutters">
             <div class="col social-icons">
@@ -214,7 +220,7 @@
             </div>
         </div>
 
-        <!-- 8.2.Copyright -->
+        <!-- 5.3.Copyright -->
         <div class="row no-gutters">
             <div class="col footer-copyright">
                 <p> © 2021 Marco Neves Fotografia </p>
@@ -231,7 +237,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
         crossorigin="anonymous"></script>
-    <script src="assets/js/script.js"></script>
+    <script type="text/javascript" src="assets/script/script.js"></script>
 </body>
 
 </html>
