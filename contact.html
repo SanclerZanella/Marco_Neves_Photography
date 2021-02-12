@@ -107,33 +107,94 @@
     <section id="contact-header">
         <div class="row no-gutters">
             <div class="col">
-                <h2>Let's drink a coffee and talk?!</h2>
+                <h2 class="text-center">Let's drink a coffee and talk?!</h2>
             </div>
         </div>
     </section>
 
-    <section >
-        <form name="contact" action="POST" data-netlify="true">
-            <label for="name-field">First name</label> <label for="lastname-field">Last name</label><br>
-            <input type="text" placeholder="Enter your name" name="name" id="name-field" required>
-            <input type="text" placeholder="Enter your Last Name" name="lastname" id="lastname-field" required><br><br>
-            <label for="email-field">Email</label><br>
-            <input type="email" placeholder="Enter your email" name="email" id="email-field" required><br><br>
-            <label for="kindevent-field">Kind of Event</label> <label for="date-field">Date of your Event</label> <label for="localevent-field">Local of your Event</label><br>
-            <select name="kindofevent" id="kindevent-field" required>
-                <option disabled selected value>-- select an event --</option>
-                <option value="wedding">wedding</option>
-                <option value="pre-wedding">Pre-Wedding</option>
-                <option value="family">Family Photos</option>
-                <option value="Other">Other</option>
-            </select>
-            <input type="date" name="eventdate" id="date-field">
-            <input type="text" placeholder="Local of your event" name="eventlocal" id="localevent-field"><br><br>
-            <label for="extrainfo-field">Tell me more about your event</label><br>
-            <textarea name="extrainfo" id="extrainfo-field" cols="60" rows="10" required></textarea><br><br>
-            <div data-netlify-recaptcha="true"></div><br><br>
-            <input type="submit" value="Send Contact">
-        </form>
+    <section>
+        <div class="row no-gutters">
+            <div class="col-md-6">
+                <form class="needs-validation" name="contact" action="POST" data-netlify="true" novalidate>
+                    <fieldset>
+                        <div class="form-row">
+                            <div class="form-group col-auto">
+                                <label for="name-field">First name</label>
+                                <input type="text" class="form-control" placeholder="Enter your name" name="name"
+                                    id="name-field" pattern="^[a-zA-Z0-9_.-]*$" required>
+                                <div class="invalid-feedback">
+                                    Please, Enter your name.
+                                </div>
+                            </div>
+
+                            <div class="form-group col-auto">
+                                <label for="lastname-field">Last name</label>
+                                <input type="text" class="form-control" placeholder="Enter your Last Name"
+                                    name="lastname" id="lastname-field" pattern="^[a-zA-Z0-9_.-]*$" required>
+                                <div class="invalid-feedback">
+                                    Please, Enter your last name.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col">
+                                <label for="email-field">Email</label>
+                                <input type="email" class="form-control" placeholder="Enter your email" name="email"
+                                    id="email-field" required>
+                                <div class="invalid-feedback">
+                                    Please, Enter your email.
+                                </div>
+                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with
+                                    anyone
+                                    else.</small>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group col-4">
+                                <label for="kindevent-field">Kind of Event</label>
+                                <select name="kindofevent" class="form-control" id="kindevent-field" required>
+                                    <option disabled selected value>-- select an event --</option>
+                                    <option value="wedding">wedding</option>
+                                    <option value="pre-wedding">Pre-Wedding</option>
+                                    <option value="family">Family Photos</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                        Please, Choose one option.
+                                    </div>
+                            </div>
+
+                            <div class="form-group col-4">
+                                <label for="date-field">Date of your Event</label>
+                                <input type="date" class="form-control" name="eventdate" id="date-field">
+                            </div>
+
+                            <div class="form-group col-4">
+                                <label for="localevent-field">Local of your Event</label>
+                                <input type="text" class="form-control" placeholder="Local of your event"
+                                    name="eventlocal" id="localevent-field" pattern="^[a-zA-Z0-9_.-]*$">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="extrainfo-field">Tell me more about your event</label><br>
+                            <textarea name="extrainfo" class="form-control" id="extrainfo-field" cols="60" rows="10"
+                                pattern="^[a-zA-Z0-9_.-]*$" required></textarea>
+                            <div class="invalid-feedback">
+                                Please, Enter the details of you event.
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div data-netlify-recaptcha="true"></div>
+                            <button type="submit" class="btn btn-primary">Send Contact</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
     </section>
 
 
@@ -170,7 +231,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
         crossorigin="anonymous"></script>
-        <script src="assets/js/script.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
