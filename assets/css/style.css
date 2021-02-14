@@ -216,6 +216,8 @@ section .md-content .col-2 {
 #pre-wedding-link span {
     display: inline-block;
     margin: 25px 0 0 40px;
+    font-weight: 900;
+    font-size: 30px;
 }
 
 #wedding-link {
@@ -227,6 +229,8 @@ section .md-content .col-2 {
 #wedding-link span {
     display: inline-block;
     margin: 25px 0 0 435px;
+    font-weight: 900;
+    font-size: 30px;
 }
 
 #family-link {
@@ -238,6 +242,8 @@ section .md-content .col-2 {
 #family-link span {
     display: inline-block;
     margin: 25px 0 0 75px;
+    font-weight: 900;
+    font-size: 30px;
 }
 
 #pre-wedding-link:hover {
@@ -512,18 +518,12 @@ section .md-content .col-2 {
 }
 
 .modal-content {
-    width: 1000px;
+    width: 200%;
     position: relative;
     right: 250px;
     background-color: rgba(0, 0, 0, .2);
-    background-clip: none;
     border: 0;
     border-radius: 0;
-}
-
-span[aria-hidden="true"] {
-    color: #FF5B00;
-    font-weight: 900;
 }
 
 .modal-content img {
@@ -607,29 +607,40 @@ span[aria-hidden="true"] {
 
 /* ----------------------------------Contact Page */
 
-#contact-header h2 {
-    margin-top: 100px;
-    color: #FF5B00;
+.contact-img {
+    background: url('../images/wedding.png') center center / cover no-repeat fixed;
+    width: 100%;
+    height: 500px;
 }
 
 #contact-form {
-    padding: 20px;
+    margin-top: 60px;
 }
 
 #form-container {
-    background: rgba(255, 91, 0, .8);
-    padding: 5px;
-    border: 2px solid #F7F2F2;
-    border-radius: 2%;
-    position: relative;
-    top: 0;
-    left: 50px;
-    z-index: 2;
+    padding: 10px;
 }
+
+#form-container fieldset {
+    width: 100%;
+    display: grid;
+    place-content: center;
+}
+
+#form-container legend {
+    font-weight: 600;
+    color: #FF5B00;
+    margin-bottom: 25px;
+}
+
 
 #form-container label {
     font-weight: 600;
-    color: #ffffff;
+    color: #FF5B00;
+}
+
+#form-container textarea {
+    resize: none;
 }
 
 #form-container button {
@@ -637,18 +648,6 @@ span[aria-hidden="true"] {
     color: #FF5B00;
     border: 1px solid #FF5B00;
     font-weight: 600;
-}
-
-.contact-card {
-    background: url('../images/wedding.png') center center / cover no-repeat;
-    width: 100%;
-    height: 660px;
-    border: 2px solid #F7F2F2;
-    border-radius: 2%;
-    filter: drop-shadow(3px 6px 9px #636161);
-    position: absolute;
-    top: 165px;
-    left: 550px;
 }
 
 #form-container button:hover {
@@ -662,6 +661,7 @@ span[aria-hidden="true"] {
 
 footer {
     margin-top: 25px;
+    position: relative;
 }
 
 footer a {
@@ -731,7 +731,6 @@ footer a:hover {
         width: 500px;
         margin: 50px 50px 0 50px;
         padding: 0;
-        flex: 0 0 0 0;
     }
     #marco_quote p {
         padding: 0;
@@ -758,17 +757,6 @@ footer a:hover {
         height: 600px;
         border-radius: 3%;
         margin-top: 50px;
-    }
-    #contact-form {
-        padding: 5px;
-    }
-    #form-container {
-        left: 30px;
-    }
-    .contact-card {
-        height: 733px;
-        top: 154px;
-        left: 470px;
     }
     .translation {
         margin-left: 435px;
@@ -823,19 +811,6 @@ footer a:hover {
         border: 1px solid #F7F2F2;
         filter: drop-shadow(3px 6px 9px #636161);
     }
-    #contact-form {
-        margin-left: 20px;
-    }
-    .contact-card {
-        height: 700;
-        top: 154px;
-        left: 600px;
-    }
-    #form-container {
-        top: 0;
-        left: 15px;
-        z-index: 1;
-    }
     .translation {
         margin-left: 550px;
     }
@@ -889,14 +864,6 @@ footer a:hover {
         border-radius: 0;
         margin: 0;
         border-top: 1px solid #FF5B00;
-    }
-    #form-container {
-        padding: 10px;
-        border-radius: 2%;
-        position: relative;
-        top: 0;
-        left: 0;
-        z-index: 1;
     }
     .translation {
         margin-left: 310px;
@@ -963,9 +930,6 @@ footer a:hover {
         border-radius: 0;
         margin-top: 20px;
         border-top: 3px solid #FF5B00;
-    }
-    #contact-form {
-        padding: 5px;
     }
     .translation {
         margin-left: 130px;
@@ -1048,9 +1012,6 @@ footer a:hover {
         margin: 0 10px 0 10px;
         font-size: 13px;
     }
-    #contact-form {
-        padding: 0;
-    }
     .translation {
         margin-left: 70px;
     }
@@ -1092,19 +1053,6 @@ footer a:hover {
         border: 1px solid #F7F2F2;
         filter: drop-shadow(3px 6px 9px #636161);
     }
-    #contact-form {
-        margin-left: 100px;
-    }
-    .contact-card {
-        height: 732px;
-        top: 154px;
-        left: 600px;
-    }
-    #form-container {
-        top: 0;
-        left: 15px;
-        z-index: 1;
-    }    
     .translation {
         margin-left: 640px;
     }

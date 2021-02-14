@@ -44,7 +44,7 @@
             <div class="collapse navbar-collapse nav-height" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current page)</span></a>
+                        <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item active dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -53,7 +53,8 @@
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="wedding.html">Weddings</a>
-                            <a class="dropdown-item" href="pre-wedding.html">Pre-Weddings</a>
+                            <a class="dropdown-item" href="pre-wedding.html">Pre-Weddings <span class="sr-only">(current
+                                    page)</span></a>
                             <a class="dropdown-item" href="family.html">Family Photos</a>
                         </div>
                     </li>
@@ -73,7 +74,7 @@
             <div class="collapse navbar-collapse nav-height">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current page)</span></a>
+                        <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item active dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-lg-sc" role="button"
@@ -82,7 +83,8 @@
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown-lg-sc">
                             <a class="dropdown-item" href="wedding.html">Weddings</a>
-                            <a class="dropdown-item" href="pre-wedding.html">Pre-Weddings</a>
+                            <a class="dropdown-item" href="pre-wedding.html">Pre-Weddings <span class="sr-only">(current
+                                    page)</span></a>
                             <a class="dropdown-item" href="family.html">Family Photos</a>
                         </div>
                     </li>
@@ -105,21 +107,29 @@
 
     <!-- 2.Albums section: Includes the images links for the photos and grid system from Bootstrap 4-->
 
-    <section id="collection-album">
-        <div class="row no-gutters">
-            <div class="col">
+    <main>
+        <section>
 
-                <!-- 2.2.Album heading and quote-->
+            <!-- 2.2.Album heading and quote-->
 
+            <div id="collection-album">
                 <div class="row no-gutters">
                     <div class="col">
-                        <h2 id="collection-album-header">Pre-Weddings</h2>
-                        <p>Type a message Here</p>
+                        <div class="row no-gutters">
+                            <div class="col">
+                                <h2 id="collection-album-header">Pre-Weddings</h2>
+                                <p>Type a message Here</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
+            </div>
+        </section>
 
-                <!-- 2.3.Image links to the photos-->
+        <!-- 2.3.Image links to the photos-->
 
+        <section>
+            <figure>
                 <div class="row no-gutters">
                     <div id="chris+marco" class="col-md-5 col-lg-4">
                         <div class="hovereffect">
@@ -241,13 +251,13 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
+            </figure>
+        </section>
+    </main>
 
     <!-- 3.Footer section: Includes Icons Links for Social media, Copyright, google translation api and the grid system from Bootstrap 4 -->
 
-    <footer class="container-fluid">
+    <footer>
         <hr>
 
         <!-- 3.1.Translate -->
@@ -281,6 +291,8 @@
             </div>
         </div>
     </footer>
+
+    <!-- External resources -->
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"

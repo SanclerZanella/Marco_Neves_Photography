@@ -45,7 +45,7 @@
             <div class="collapse navbar-collapse nav-height" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="../../index.html">Home <span class="sr-only">(current page)</span></a>
+                        <a class="nav-link" href="../../index.html">Home</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -74,7 +74,7 @@
             <div class="collapse navbar-collapse nav-height">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="../../index.html">Home <span class="sr-only">(current page)</span></a>
+                        <a class="nav-link" href="../../index.html">Home</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown-lg-sc" role="button"
@@ -103,39 +103,47 @@
         </nav>
     </header>
 
-    <!-- 2.Photo Album section: Includes Image links that opens a photo carousel in modal from Bootstrap 4-->
+    <!-- 2.Photo Album: Includes Image links that opens a photo carousel in modal from Bootstrap 4-->
 
-    <section>
-        <div class="row no-gutters photo-container">
-            <div class="col">
+    <main>
+        <section>
+            <div class="row no-gutters photo-container">
+                <div class="col">
 
-                <!-- 2.1.Breadcrumb from Bootstrap 4-->
+                    <!-- 2.1.Breadcrumb from Bootstrap 4-->
 
-                <div class="row no-gutters">
-                    <div class="col">
-                        <div class="breadcrumb-album">
-                            <nav aria-label="breadcrumb">
-                                <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="../../wedding.html#chris+marco">Weddings</a>
-                                    </li>
-                                    <li class="breadcrumb-item active" aria-current="page">Chris + Marco</li>
-                                </ol>
-                            </nav>
+                    <div class="row no-gutters">
+                        <div class="col">
+                            <div class="breadcrumb-album">
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb">
+                                        <li class="breadcrumb-item"><a
+                                                href="../../wedding.html#chris+marco">Weddings</a>
+                                        </li>
+                                        <li class="breadcrumb-item active" aria-current="page">Chris + Marco <span class="sr-only">(current page)</span></li>
+                                    </ol>
+                                </nav>
+                            </div>
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
 
-                <!-- 2.2.Album heading -->
+        <!-- 2.2.Album heading -->
 
-                <div class="row no-gutters">
-                    <div class="col">
-                        <h2>Chris + Marco</h2>
-                        <p>Type something Here</p>
-                    </div>
+        <section>
+            <div class="row no-gutters">
+                <div class="col">
+                    <h2>Chris + Marco</h2>
+                    <p>Type something Here</p>
                 </div>
+            </div>
+        </section>
 
-                <!-- 2.3.Album gallery -->
-
+        <!-- 2.3.Album gallery -->
+        <section>
+            <figure>
                 <div class="row no-gutters" id="gallery" data-toggle="modal" data-target="#exampleModal">
                     <div class="row no-gutters">
                         <div class="col-4">
@@ -203,10 +211,17 @@
                                     <!-- 2.4.1.Photo carousel -->
                                     <div id="carouselExample" class="carousel slide" data-ride="carousel">
                                         <ol class="carousel-indicators">
-                                            <li data-target="#carouselExample" data-slide-to="0" class="active"></li>
+                                            <li data-target="#carouselExample" data-slide-to="0" class="active">
+                                            </li>
                                             <li data-target="#carouselExample" data-slide-to="1"></li>
                                             <li data-target="#carouselExample" data-slide-to="2"></li>
                                             <li data-target="#carouselExample" data-slide-to="3"></li>
+                                            <li data-target="#carouselExample" data-slide-to="4"></li>
+                                            <li data-target="#carouselExample" data-slide-to="5"></li>
+                                            <li data-target="#carouselExample" data-slide-to="6"></li>
+                                            <li data-target="#carouselExample" data-slide-to="7"></li>
+                                            <li data-target="#carouselExample" data-slide-to="8"></li>
+                                            <li data-target="#carouselExample" data-slide-to="9"></li>
                                         </ol>
                                         <div class="carousel-inner">
                                             <div class="carousel-item active">
@@ -242,13 +257,13 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
+            </figure>
+        </section>
+    </main>
 
     <!-- 3.Footer section: Includes Icons Links for Social media, Copyright, google translation api and the grid system from Bootstrap 4 -->
 
-    <footer class="container-fluid">
+    <footer>
         <hr>
 
         <!-- 3.1.Translate -->
@@ -283,13 +298,15 @@
         </div>
     </footer>
 
+    <!-- External resources -->
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
         crossorigin="anonymous"></script>
-    <script type="text/javascript" src="assets/script/script.js"></script>
+    <script type="text/javascript" src="../script/script.js"></script>
 </body>
 
 </html>

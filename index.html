@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -17,8 +17,6 @@
 
     <script src="https://kit.fontawesome.com/169bbd8201.js" crossorigin="anonymous"></script>
 
-    <a href="https://icons8.com/icon/15509/brazil"></a>
-
     <title>Photography | Marco Neves</title>
 </head>
 
@@ -31,7 +29,7 @@
 
             <!-- 1.1.Logo -->
 
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="#" aria-label="Logo, Go to Home Page">
                 <img class="logo" src="assets/images/logo-no-background.png" alt="Marco Neves Photography Logo">
             </a>
 
@@ -47,24 +45,29 @@
             <div class="collapse navbar-collapse nav-height" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current page)</span></a>
+                        <a class="nav-link" href="#" aria-label="Go to home page">Home <span class="sr-only">(current
+                                page)</span></a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                            aria-label="Dropdown menu which opens the wedding page link, pre-wedding page link and family photo page link">
                             Portfolio
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="wedding.html">Weddings</a>
-                            <a class="dropdown-item" href="pre-wedding.html">Pre-Weddings</a>
-                            <a class="dropdown-item" href="family.html">Family Photos</a>
+                            <a class="dropdown-item" href="wedding.html"
+                                aria-label="Go to weddings portfolio">Weddings</a>
+                            <a class="dropdown-item" href="pre-wedding.html"
+                                aria-label="Go to pre-weddings portfolio">Pre-Weddings</a>
+                            <a class="dropdown-item" href="family.html" aria-label="Go to family photo portfolio">Family
+                                Photos</a>
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="bio.html">Bio</a>
+                        <a class="nav-link" href="bio.html" aria-label="Go to biography page">Bio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
+                        <a class="nav-link" href="contact.html" aria-label="Go to contact page">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -76,30 +79,35 @@
             <div class="collapse navbar-collapse nav-height">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current page)</span></a>
+                        <a class="nav-link" href="#" aria-label="Go to home page">Home <span class="sr-only">(current
+                                page)</span></a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-lg-sc" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                            aria-label="Dropdown menu which opens the wedding page link, pre-wedding page link and family photo page link">
                             Portfolio
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown-lg-sc">
-                            <a class="dropdown-item" href="wedding.html">Weddings</a>
-                            <a class="dropdown-item" href="pre-wedding.html">Pre-Weddings</a>
-                            <a class="dropdown-item" href="family.html">Family Photos</a>
+                            <a class="dropdown-item" href="wedding.html"
+                                aria-label="Go to weddings portfolio">Weddings</a>
+                            <a class="dropdown-item" href="pre-wedding.html"
+                                aria-label="Go to pre-weddings portfolio">Pre-Weddings</a>
+                            <a class="dropdown-item" href="family.html" aria-label="Go to family photo portfolio">Family
+                                Photos</a>
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="navbar-brand" href="#">
+                        <a class="navbar-brand" href="#" aria-label="Logo, Go to Home Page">
                             <img class="logo" src="assets/images/logo-no-background.png"
                                 alt="Marco Neves Photography Logo">
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="bio.html">Bio</a>
+                        <a class="nav-link" href="bio.html" aria-label="Go to biography page">Bio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
+                        <a class="nav-link" href="contact.html" aria-label="Go to contact page">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -108,46 +116,57 @@
 
     <!-- 2.Hero Image section: Includes hero image, carousel and the grid system from Bootstrap 4 -->
 
-    <section>
-        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img class="d-block w-100" src="assets/images/hero-img-home.jpg" alt="First slide">
+    <main>
+        <section aria-labelledby="hero-carousel">
+            <h2 id="hero-carousel" class="sr-only">Hero images in carousel</h2>
+            <figure>
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="assets/images/hero-img-home.jpg" alt="First hero image">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="assets/images/marco+chris.jpg" alt="Second hero image">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="assets/images/wedding.png" alt="Third hero image">
+                        </div>
+                    </div>
                 </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="assets/images/marco+chris.jpg" alt="Second slide">
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="assets/images/wedding.png" alt="Third slide">
-                </div>
-            </div>
-        </div>
-    </section>
+            </figure>
+        </section>
 
-    <!-- 3.Middle Content section: Includes some quotes from Marco Neves with pictures and his profile photo and 
+        <!-- 3.Middle Content section: Includes some quotes from Marco Neves with pictures and his profile photo and 
         the grid system from Bootstrap 4 -->
 
-    <section>
-        <hr>
-        <div class="row md-content no-gutters">
-            <div class="col col-xl-7">
+        <section aria-labelledby="middle-content">
+            <h2 id="middle-content" class="sr-only">An middle content which contains two photos of a couple, one
+                article, one quote, and one
+                profile picture</h2>
+            <hr>
+            <div class="row md-content no-gutters">
+                <div class="col col-xl-7">
 
-                <!-- 3.1.Image cards with quote -->
+                    <!-- 3.1.Image cards with quote -->
 
-                <div class="row no-gutters">
-                    <div class="col-lg-6 col-xl-8">
-                        <img id="first-md-content-img" class="md-content-img shadow"
-                            src="assets/images/md-content-img1.png" alt="
+                    <div class="row no-gutters">
+                        <div class="col-lg-6 col-xl-8">
+                            <figure>
+                                <img id="first-md-content-img" class="md-content-img shadow"
+                                    src="assets/images/md-content-img1.png" alt="
                  shadow of couple holding hands">
 
-                        <img id="second-md-content-img" class="md-content-img" src="assets/images/md-content-img2.png"
-                            alt="
+                                <img id="second-md-content-img" class="md-content-img"
+                                    src="assets/images/md-content-img2.png" alt="
                  couple holding hands looking for opposite directions">
-                    </div>
-                    <div class="col-md col-lg-6 col-xl-4">
-                        <article>
-                            <div id="text-md-content">
-                                <blockquote>
+                            </figure>
+                        </div>
+                        <div class="col-md col-lg-6 col-xl-4">
+                            <article aria-labelledby="middle-article">
+                                <h2 id="middle-article" class="sr-only">A description about pre-wedding and the
+                                    relationship between
+                                    photographer and couples</h2>
+                                <div id="text-md-content">
                                     <p><span class="initial-letter">The</span> pre-wedding is simply
                                         and for several reasons! This will be the first contact
                                         between us, photographers, and you, engaged, actually clicking. It
@@ -159,241 +178,316 @@
                                         relationship that will reflect on the whole project, and it is
                                         of course, we are looking to tell stories, your story!
                                     </p>
-                                </blockquote>
-                            </div>
-                        </article>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+
+                    <!-- 3.2.Profile Photo with quote -->
+
+                    <div class="row no-gutters">
+                        <div id="marco_quote" class="d-none d-lg-block col-lg">
+                            <blockquote class="blockquote">
+                                <p>"Through the lens I found another way to see the life. The photography taught me
+                                    contemplate the life and see the opportunity to make art in every moment,
+                                    eternalizing
+                                    in pictures." <br> - Marco Neves</p>
+                            </blockquote>
+                        </div>
                     </div>
                 </div>
-
-                <!-- 3.2.Profile Photo with quote -->
-
-                <div class="row no-gutters">
-                    <div id="marco_quote" class="d-none d-lg-block col-lg">
-                        <blockquote class="blockquote">
-                            <p>"Through the lens I found another way to see the life. The photography taught me
-                                contemplate the life and see the opportunity to make art in every moment, eternalizing
-                                in pictures." <br> - Marco Neves</p>
-                        </blockquote>
-                    </div>
+                <div class="d-none d-xl-block col-5-xl">
+                    <figure>
+                        <div class="profile_photo_mdContent" aria-labelledby="rio-photo">
+                            <h1 id="rio-photo"><i class="fas fa-camera-retro"></i> RIO DE JANEIRO BASED PHOTOGRAPHER
+                            </h1>
+                            <img id="profile_photo_homePg" src="assets/images/MN_Photo_HomePg.jpg"
+                                alt="Marco Neves Profile Photo">
+                        </div>
+                    </figure>
                 </div>
             </div>
-            <div class="d-none d-xl-block col-5-xl">
-                <div class="profile_photo_mdContent">
-                    <h1><i class="fas fa-camera-retro"></i> RIO DE JANEIRO BASED PHOTOGRAPHER</h1>
-                    <img id="profile_photo_homePg" src="assets/images/MN_Photo_HomePg.jpg"
-                        alt="Marco Neves Profile Photo">
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- 4.Portfolio Section: Includes three photo links to album pages and the grid system from Bootstrap 4 -->
+        <!-- 4.Portfolio Section: Includes three photo links to album pages and the grid system from Bootstrap 4 -->
 
-    <section>
-        <div class="row no-gutters portfolio-links portfolio-link-outer d-none d-lg-block">
-            <div class="col-lg">
-                <div class="row no-gutters">
-
-                    <!-- 4.1.Pre-weddings link -->
-
-                    <div class="col-lg-6">
-                        <a href="pre-wedding.html">
-                            <div id="pre-wedding-link"><span>
-                                    <h2>Pre-Weddings</h2>
-                                </span></div>
-                        </a>
-                    </div>
-
-                    <!-- 4.2.Weddings link -->
-
-                    <div class="col-lg-6 portfolio-link-outer">
-                        <a href="wedding.html">
-                            <div id="wedding-link"><span>
-                                    <h2>Weddings</h2>
-                                </span></div>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- 4.3.Family Photos link -->
-
-                <div class="row no-gutters portfolio-link-outer">
+        <section aria-labelledby="portfolio-photos">
+            <h2 id="portfolio-photos" class="sr-only">section with three image links that directs to Wedding portfolio,
+                pre-wedding portfolio
+                and family photos portfolio</h2>
+            <figure>
+                <div class="row no-gutters portfolio-links portfolio-link-outer d-none d-lg-block">
                     <div class="col-lg">
-                        <a href="family.html">
-                            <div id="family-link"><span>
-                                    <h2>Family Photos</h2>
-                                </span></div>
-                        </a>
+                        <div class="row no-gutters">
+
+                            <!-- 4.1.Pre-weddings link -->
+
+                            <div class="col-lg-6">
+                                <a href="pre-wedding.html" aria-label="Image link which Goes to pre-wedding portfolio">
+                                    <div id="pre-wedding-link"><span>
+                                            Pre-Weddings
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- 4.2.Weddings link -->
+
+                            <div class="col-lg-6 portfolio-link-outer">
+                                <a href="wedding.html" aria-label="Image link which Goes to wedding portfolio">
+                                    <div id="wedding-link"><span>
+                                            Weddings
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- 4.3.Family Photos link -->
+
+                        <div class="row no-gutters portfolio-link-outer">
+                            <div class="col-lg">
+                                <a href="family.html" aria-label="Image link which Goes to family photo portfolio">
+                                    <div id="family-link"><span>
+                                            Family Photos
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
+            </figure>
+        </section>
 
-    <!-- 5.Testimonials section: Includes three pictures with three testimonials and couple names 
+        <!-- 5.Testimonials section: Includes three pictures with three testimonials and couple names 
         and the grid system from Bootstrap 4 -->
 
-    <section id="testimonials-section" class="d-none d-lg-block">
-        <div class="row no-gutters">
-            <div class="col">
-                <h2>Kind Words <i class="fas fa-heart"></i></h2>
-            </div>
-        </div>
-        <div class="row no-gutters">
-            <div class="col">
-                <div class="row no-gutters">
-
-                    <!-- 5.1. First Testimonial Photo + Testimonial -->
-
-                    <div class="col-lg-4">
-                        <div id="first-testimonial"></div>
-
-                        <div class="row no-gutters">
-                            <div class="col">
-                                <div class="testimonials">
-                                    <span>
-                                        <p>"I LOVE my weddings photos. I can't stop to look at these photos, every
-                                            moment
-                                            careful registered by Marco Neves make me have the sweetest memories of that
-                                            special day!"</p>
-                                    </span>
-                                </div>
-                                <div>
-                                    <p class="signature">Juliana + Elvis</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 5.2. Second Testimonial Photo + Testimonial -->
-
-                    <div class="col-lg-4">
-                        <div id="second-testimonial"></div>
-
-                        <div class="row no-gutters">
-                            <div class="col">
-                                <div class="testimonials">
-                                    <span>
-                                        <p>"I'd Like to thank Marco because he made my pre-wedding so funny and joyful,
-                                            he makes us feel at eases, the photo session flows naturally, he makes it a
-                                            pleasant moment with his kindness."</p>
-                                    </span>
-                                </div>
-                                <div>
-                                    <p class="signature">Chris + Marco</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 5.3. Third Testimonial Photo + Testimonial. This testimonials is hidden on medium screen sizes devices -->
-
-                    <div class="d-none d-lg-block col-lg-4">
-                        <div id="third-testimonial"></div>
-
-                        <div class="row no-gutters">
-                            <div class="col">
-                                <div class="testimonials">
-                                    <span>
-                                        <p>"I had met Marco when I was looking for a photographer for my wedding, since
-                                            that moment we became friends, he is part of our story photographing
-                                            important moments of our life. Now I'm pregnant and he will eternalize this
-                                            moment in photos."</p>
-                                    </span>
-                                </div>
-                                <div>
-                                    <p class="signature">Marcelly + Mauro</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 6.Carousel testimonials section: The same content as the Testimonials section but 
-        using the grid system and carousel from Bootstrap 4 for small to medium screen sizes -->
-
-    <section id="carousel-testimonials-section">
-        <div class="row no-gutters">
-            <div class="col d-lg-none">
+        <section aria-labelledby="testimonials">
+            <h2 id="testimonials" class="sr-only">Testimonial section with three testimonials from couples and their
+                photo</h2>
+            <div id="testimonials-section" class="d-none d-lg-block">
                 <div class="row no-gutters">
                     <div class="col">
                         <h2>Kind Words <i class="fas fa-heart"></i></h2>
                     </div>
                 </div>
+                <div class="row no-gutters">
+                    <div class="col">
+                        <div class="row no-gutters">
 
-                <!-- 6.1.Carousel content, photos and captions-->
+                            <!-- 5.1. First Testimonial Photo + Testimonial -->
 
-                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                    </ol>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img class="d-block carousel-photos w-100" src="assets/images/couple1.png"
-                                alt="First slide">
+                            <div class="col-lg-4">
+                                <figure>
+                                    <div id="first-testimonial"><span class="sr-only">First testimonial photo</span>
+                                    </div>
 
-                            <div class="carousel-caption">
-                                <h5>Juliana + Elvis</h5>
-                                <p>"I LOVE my weddings photos. I can't stop to look at these photos, every moment
-                                    careful registered by Marco Neves make me have the sweetest memories of that
-                                    special day!"</p>
+                                    <div class="row no-gutters">
+                                        <div class="col">
+                                            <div class="testimonials">
+                                                <blockquote>
+                                                    <span>
+                                                        "I LOVE my weddings photos. I can't stop to look at these
+                                                        photos,
+                                                        every
+                                                        moment
+                                                        careful registered by Marco Neves make me have the sweetest
+                                                        memories
+                                                        of
+                                                        that
+                                                        special day!"
+                                                    </span>
+                                                </blockquote>
+                                            </div>
+                                            <div>
+                                                <p class="signature">Juliana + Elvis</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </figure>
                             </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block carousel-photos w-100" src="assets/images/couple2.png"
-                                alt="Second slide">
 
-                            <div class="carousel-caption">
-                                <h5>Chris + Marco</h5>
-                                <p>"I'd Like to thank Marco because he made my pre-wedding so funny and joyful,
-                                    he makes us feel at eases, the photo session flows naturally, he makes it a
-                                    pleasant moment with his kindness."</p>
+                            <!-- 5.2. Second Testimonial Photo + Testimonial -->
+
+                            <div class="col-lg-4">
+                                <figure>
+                                    <div id="second-testimonial"><span class="sr-only">Second testimonial photo</span>
+                                    </div>
+
+                                    <div class="row no-gutters">
+                                        <div class="col">
+                                            <div class="testimonials">
+                                                <blockquote>
+                                                    <span>
+                                                        "I'd Like to thank Marco because he made my pre-wedding so funny
+                                                        and
+                                                        joyful,
+                                                        he makes us feel at eases, the photo session flows naturally, he
+                                                        makes
+                                                        it a
+                                                        pleasant moment with his kindness."
+                                                    </span>
+                                                </blockquote>
+                                            </div>
+                                            <div>
+                                                <p class="signature">Chris + Marco</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </figure>
                             </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block carousel-photos w-100" src="assets/images/couple3.png"
-                                alt="Third slide">
 
-                            <div class="carousel-caption">
-                                <h5>Marcelly + Mauro</h5>
-                                <p>"I had met Marco when I was looking for a photographer for my wedding, since
-                                    that moment we became friends, he is part of our story photographing
-                                    important moments of our life. Now I'm pregnant and he will eternalize this
-                                    moment in photos."</p>
+                            <!-- 5.3. Third Testimonial Photo + Testimonial. This testimonials is hidden on medium screen sizes devices -->
+
+                            <div class="d-none d-lg-block col-lg-4">
+                                <figure>
+                                    <div id="third-testimonial"><span class="sr-only">Third testimonial photo</span>
+                                    </div>
+
+                                    <div class="row no-gutters">
+                                        <div class="col">
+                                            <div class="testimonials">
+                                                <blockquote>
+                                                    <span>
+                                                        "I had met Marco when I was looking for a photographer for my
+                                                        wedding,
+                                                        since
+                                                        that moment we became friends, he is part of our story
+                                                        photographing
+                                                        important moments of our life. Now I'm pregnant and he will
+                                                        eternalize
+                                                        this
+                                                        moment in photos."
+                                                    </span>
+                                                </blockquote>
+                                            </div>
+                                            <div>
+                                                <p class="signature">Marcelly + Mauro</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </figure>
                             </div>
                         </div>
                     </div>
-
-                    <!-- 6.2.Carousel control, preview and next button -->
-
-                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- 7.Instagram section: Includes elfsight widgets plugin-->
+        <!-- 6.Carousel testimonials section: The same content as the Testimonials section but 
+        using the grid system and carousel from Bootstrap 4 for small to medium screen sizes -->
 
-    <section>
-        <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-        <div class="elfsight-app-83080045-cafb-41d5-bb13-d866283ebf98"></div>
-    </section>
+        <section aria-labelledby="testimonials-carousel">
+            <h2 id="testimonials-carousel" class="sr-only">Testimonial section with three testimonials from couples and
+                their
+                photo</h2>
+            <div id="carousel-testimonials-section">
+                <div class="row no-gutters">
+                    <div class="col d-lg-none">
+                        <div class="row no-gutters">
+                            <div class="col">
+                                <h2>Kind Words <i class="fas fa-heart"></i></h2>
+                            </div>
+                        </div>
+
+                        <!-- 6.1.Carousel content, photos and captions-->
+
+                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <figure>
+                                        <img class="d-block carousel-photos w-100" src="assets/images/couple1.png"
+                                            alt="First testimonial">
+                                    </figure>
+
+                                    <div class="carousel-caption" aria-labelledby="couple1">
+                                        <h5 id="couple1">Juliana + Elvis</h5>
+                                        <blockquote>
+                                            <p>"I LOVE my weddings photos. I can't stop to look at these photos, every
+                                                moment
+                                                careful registered by Marco Neves make me have the sweetest memories of
+                                                that
+                                                special day!"</p>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <figure>
+                                        <img class="d-block carousel-photos w-100" src="assets/images/couple2.png"
+                                            alt="Second testimonial">
+                                    </figure>
+
+                                    <div class="carousel-caption" aria-labelledby="couple2">
+                                        <h5 id="couple2">Chris + Marco</h5>
+                                        <blockquote>
+                                            <p>"I'd Like to thank Marco because he made my pre-wedding so funny and
+                                                joyful,
+                                                he makes us feel at eases, the photo session flows naturally, he makes
+                                                it a
+                                                pleasant moment with his kindness."</p>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <figure>
+                                        <img class="d-block carousel-photos w-100" src="assets/images/couple3.png"
+                                            alt="Third testimonial">
+                                    </figure>
+
+                                    <div class="carousel-caption" aria aria-labelledby="couple3">
+                                        <h5 id="couple3">Marcelly + Mauro</h5>
+                                        <blockquote>
+                                            <p>"I had met Marco when I was looking for a photographer for my wedding,
+                                                since
+                                                that moment we became friends, he is part of our story photographing
+                                                important moments of our life. Now I'm pregnant and he will eternalize
+                                                this
+                                                moment in photos."</p>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 6.2.Carousel control, preview and next button -->
+
+                            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
+                                data-slide="prev" aria-label="Carousel Previous image icon">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
+                                data-slide="next" aria-label="Carousel next image icon">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7.Instagram section: Includes elfsight widgets plugin-->
+
+        <section aria-labelledby="instagram">
+            <h2 id="instagram" class="sr-only">Section with photos from instagram that directs to Marco Neves
+                Photography instagram
+            </h2>
+            <figure>
+                <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+                <div class="elfsight-app-83080045-cafb-41d5-bb13-d866283ebf98"></div>
+            </figure>
+        </section>
+    </main>
 
     <!-- 8.Footer section: Includes Icons Links for Social media, Copyright, google translation api and the grid system from Bootstrap 4 -->
 
-    <footer class="container-fluid">
+    <footer>
         <hr>
 
         <!-- 8.1.Translate -->
@@ -401,10 +495,17 @@
         <div class="row no-gutters">
             <div class="translation">
                 <div class="flags">
-                    <span><img src="https://img.icons8.com/emoji/48/000000/united-kingdom-emoji.png" /></span><span><img
-                            src="https://img.icons8.com/emoji/48/000000/brazil-emoji.png" /></span>
+                    <figure>
+                        <span><img src="https://img.icons8.com/emoji/48/000000/united-kingdom-emoji.png"
+                                alt="United Kingdom flag" /></span><span><img
+                                src="https://img.icons8.com/emoji/48/000000/brazil-emoji.png"
+                                alt="Brazilian flag" /></span>
+                    </figure>
                 </div>
-                <div id="google_translate_element_id"></div>
+                <div aria-labelledby="language">
+                    <h2 id="language" class="sr-only">Choose a language (Portuguese or English</h2>
+                    <div id="google_translate_element_id"></div>
+                </div>
             </div>
         </div>
 
@@ -412,10 +513,14 @@
 
         <div class="row no-gutters">
             <div class="col social-icons">
-                <a href="https://www.facebook.com/MARCONEVESFOTOGRAFIA/" target="_blank"><i
-                        class="fab fa-facebook-square"></i></a><a
-                    href="https://www.instagram.com/marconevesfotografia/?hl=en" target="_blank"><i
-                        class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/MARCONEVESFOTOGRAFIA/" target="_blank"
+                    aria-label="Go to Marco Neves Photography Facebook page (opens in new tab)"> <i
+                        class="fab fa-facebook-square"></i>
+                </a>
+                <a href="https://www.instagram.com/marconevesfotografia/?hl=en" target="_blank"
+                    aria-label="Go to Marco Neves Photography Instagram page (opens in new tab)">
+                    <i class="fab fa-instagram"></i>
+                </a>
             </div>
         </div>
 
@@ -428,7 +533,7 @@
         </div>
     </footer>
 
-    <!-- Bootstrap 4 JavaScript and Jquery bundle -->
+    <!-- External resources -->
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -436,7 +541,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
         crossorigin="anonymous"></script>
-    <script type="text/javascript" src="assets/script/script.js"></script>
+    <a href="https://icons8.com/icon/15509/brazil" aria-label="source link to icons"></a>
+    <script src="assets/script/script.js"></script>
 </body>
 
 </html>
