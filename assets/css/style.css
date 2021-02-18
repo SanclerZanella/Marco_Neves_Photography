@@ -5,7 +5,7 @@ html {
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: #F7F2F2;
+    background-color: #ededed;
 }
 
 h2 {
@@ -161,7 +161,7 @@ nav .dropdown-item:hover {
     padding-left: 5px;
     border-left: 3px solid #FF5B00;
     border-radius: 5%;
-    color: #2d3436;
+    color: #111111;
     background-color: #dfe6e9;
     overflow: auto;
 }
@@ -173,7 +173,7 @@ nav .dropdown-item:hover {
 .profile_photo_mdContent h1 {
     margin-bottom: 5px;
     text-align: center;
-    color: #2d3436;
+    color: #111111;
     font-size: medium;
 }
 
@@ -197,8 +197,7 @@ nav .dropdown-item:hover {
 }
 
 #marco_quote p {
-    /* margin-top: 20px; */
-    color: #2d3436;
+    color: #111111;
 }
 
 /* ----------------------------------Home Page Portfolio Links*/
@@ -307,7 +306,7 @@ nav .dropdown-item:hover {
     display: inline-block;
     text-align: center;
     margin: 50px 25px 0 25px;
-    color: #2d3436;
+    color: #111111;
 }
 
 .signature {
@@ -371,6 +370,12 @@ nav .dropdown-item:hover {
     margin-top: 100px;
     font-family: 'Arizonia', sans-serif;
     font-size: 50px;
+}
+
+.portfolio-albums {
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
 
 .hovereffect {
@@ -462,14 +467,14 @@ nav .dropdown-item:hover {
 
 /* ----------------------------------Album Pages */
 
-.photo-container h2 {
+.couple-name h2 {
     margin-top: 150px;
     text-align: center;
     font-family: 'Arizonia', sans-serif;
     font-size: 50px;
 }
 
-.photo-container p {
+.couple-name p {
     text-align: center;
 }
 
