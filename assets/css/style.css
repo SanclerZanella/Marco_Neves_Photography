@@ -5,7 +5,7 @@ html {
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: #ededed;
+    background-color: #EDEDED;
 }
 
 h2 {
@@ -62,7 +62,7 @@ hr {
 }
 
 nav {
-    background-color: #F7F2F2;
+    background-color: #EDEDED;
 }
 
 nav .nav-height {
@@ -77,7 +77,7 @@ nav ul .nav-link {
     font-weight: 600;
     padding: 20px 0 0 0;
     height: max-content;
-    background-color: #F7F2F2;
+    background-color: #ededed;
     letter-spacing: 2px;
 }
 
@@ -143,27 +143,26 @@ nav .dropdown-item:hover {
 
 #first-md-content-img {
     margin: 30px 0 0 25px;
-    position: relative;
-    top: 0;
-    left: 0;
-}
-
-#second-md-content-img {
-    position: absolute;
-    top: 50px;
-    left: 280px;
-    border: 1px solid #F7F2F2;
+    object-fit: cover;
+    object-position: center;
 }
 
 #text-md-content {
-    width: 250%;
-    margin: 130px 0 0 80px;
+    width: 100%;
+    margin: 130px 0 0 280px;
     padding-left: 5px;
     border-left: 3px solid #FF5B00;
     border-radius: 5%;
     color: #111111;
     background-color: #dfe6e9;
     overflow: auto;
+}
+
+#bride-association-link {
+    object-fit: cover;
+    object-position: center;
+    width: 60%;
+    margin: -150px 0 0 550px;
 }
 
 .profile_photo_mdContent {
@@ -183,6 +182,8 @@ nav .dropdown-item:hover {
     border: 1px solid #FF5B00;
     border-radius: 100%;
     filter: drop-shadow(3px 6px 9px #636161);
+    object-fit: cover;
+    object-position: center;
 }
 
 #marco_quote {
@@ -198,6 +199,11 @@ nav .dropdown-item:hover {
 
 #marco_quote p {
     color: #111111;
+}
+
+#bride-association-link:hover {
+    background: #FF5B00;
+    border-radius:  5%;
 }
 
 /* ----------------------------------Home Page Portfolio Links*/
@@ -529,9 +535,9 @@ nav .dropdown-item:hover {
 
 .hero-bio img {
     width: 100%;
-    height: 800px;
     margin-top: 15px;
     object-fit: cover;
+    object-position: center;
 }
 
 #introducing {
@@ -573,21 +579,22 @@ nav .dropdown-item:hover {
 }
 
 #bio-profile-photo {
-    background: url('../images/bio-profile-photo.jpg') center center / cover no-repeat;
-    width: 500px;
-    height: 500px;
+    width: 600px;
+    height: 600px;
     border-radius: 100%;
-    margin-left: 20px;
+    margin-right: 20px;
     border: 1px solid #F7F2F2;
     filter: drop-shadow(3px 6px 9px #636161);
+    object-fit: cover;
+    object-position: center;
 }
 
 /* ----------------------------------Contact Page */
 
 .contact-img {
-    background: url('../images/wedding.png') center center / cover no-repeat fixed;
     width: 100%;
-    height: 500px;
+    object-fit: cover;
+    object-position: center;
 }
 
 #contact-form {
@@ -694,12 +701,15 @@ footer a:hover {
         padding: 0;
     }
     #text-md-content {
-        width: 400px;
-        /* margin: 100px 0 0 50px; */
+        width: 200px;
         padding: 30px 5x 0 0;
     }
     #text-md-content p {
         margin-left: 5px;
+    }
+    #bride-association-link {
+        width: 25%;
+        margin: 10px 0 0 320px;
     }
     #marco_quote {
         height: 150px;
@@ -749,32 +759,12 @@ footer a:hover {
         margin-top: 350px;
         margin-left: 30px;
     }
-    #profile_photo_homePg {
-        margin-left: 40px;
-        margin-top: 5px;
-        width: 390px;
-        height: 390px;
-    }
-    #bio-profile-photo {
-        width: 600px;
-        height: 600px;
-        margin-left: 20px;
-    }
     #introducing {
         height: 190px;
     }
     #bio-quote {
         height: 510px;
         margin-top: 100px;
-    }
-    #bio-profile-photo {
-        background: url('../images/bio-profile-photo.jpg') center center / cover no-repeat;
-        width: 600px;
-        height: 600px;
-        border-radius: 100%;
-        margin-left: 20px;
-        border: 1px solid #F7F2F2;
-        filter: drop-shadow(3px 6px 9px #636161);
     }
     .translation {
         margin-left: 550px;
@@ -790,18 +780,10 @@ footer a:hover {
         margin: 20px 0 0 35px;
         padding-left: 5px;
         border-right: 3px solid #FF5B00;
-    }
-    .md-content-img {
-        filter: drop-shadow(3px 6px 9px #636161);
+        text-align: center;
     }
     #first-md-content-img {
-        margin-left: 130px;
-        right: 400px;
-    }
-    #second-md-content-img {
-        position: absolute;
-        top: 50px;
-        left: 360px;
+        margin-left: 20px;
     }
     .modal-content {
         right: 10px;
@@ -828,7 +810,6 @@ footer a:hover {
     }
     #bio-profile-photo {
         width: 100%;
-        height: 600px;
         border-radius: 0;
         margin: 0;
         border-top: 1px solid #FF5B00;
@@ -844,20 +825,18 @@ footer a:hover {
         width: 200px;
         margin-left: 10px;
     }
-    .carousel-homepg img {
-        height: 450px;
+    #carouselHeroSlidesOnly .first-heroImg {
+        object-position: -350px;
     }
     .md-content-img {
         height: 300px;
         filter: drop-shadow(3px 6px 9px #636161);
     }
     #first-md-content-img {
-        margin-left: 25px;
-    }
-    #second-md-content-img {
-        position: absolute;
-        top: 50px;
-        left: 205px;
+        width: 90%;
+        margin-left: 20px;
+        object-fit: cover;
+        object-position: -150px;
     }
     #text-md-content {
         width: 90%;
@@ -897,10 +876,12 @@ footer a:hover {
     }
     #bio-profile-photo {
         width: 100%;
-        height: 600px;
         border-radius: 0;
         margin-top: 20px;
         border-top: 3px solid #FF5B00;
+    }
+    .contact-img {
+        object-position: center 50px;
     }
     .translation {
         margin-left: 130px;
@@ -916,15 +897,11 @@ footer a:hover {
         filter: drop-shadow(3px 6px 9px #636161);
     }
     #first-md-content-img {
-        margin-left: 25px;
-    }
-    #second-md-content-img {
-        position: absolute;
-        top: 45px;
-        left: 180px;
+        margin-left: 20px;
+        object-position: -120px;
     }
     #text-md-content {
-        margin: 50px 15px 0 20px;
+        margin: 10px 15px 0 20px;
         padding-left: 5px;
         border-right: 3px solid #FF5B00;
     }
@@ -952,22 +929,15 @@ footer a:hover {
 }
 
 @media screen and (max-width: 320px) {
+    #carouselHeroSlidesOnly .first-heroImg {
+        object-position: -390px;
+    }
     .md-content-img {
         height: 240px;
         filter: drop-shadow(3px 6px 9px #636161);
     }
     #first-md-content-img {
         display: none;
-    }
-    #second-md-content-img {
-        width: 260px;
-        height: 300px;
-        border: 1px solid #F7F2F2;
-        border-radius: 2%;
-        position: relative;
-        left: 0;
-        top: 0;
-        margin: 25px 0 0 25px;
     }
     #bio-middle-content p {
         margin: 25px 0 25px 50px;
@@ -988,20 +958,18 @@ footer a:hover {
 
 @media screen and (min-width: 1440px) {
     #text-md-content {
-        margin: 80px 0 0 5px;
-        width: 340px;
-        height: 350px;
+        margin: 100px 0 0 220px;
         padding-top: 0;
     }
     #text-md-content p {
         padding-left: 5px;
     }
     .profile_photo_mdContent {
-        margin: 100px 0 0 60px;
+        margin: 300px 0 0 60px;
     }
     #profile_photo_homePg {
-        width: 500px;
-        height: 520px;
+        width: 400px;
+        height: 400px;
     }
     #marco_quote {
         height: 150px;
@@ -1012,7 +980,6 @@ footer a:hover {
         margin-top: 130px;
     }
     #bio-profile-photo {
-        background: url('../images/bio-profile-photo.jpg') center center / cover no-repeat;
         width: 650px;
         height: 650px;
         border-radius: 100%;
