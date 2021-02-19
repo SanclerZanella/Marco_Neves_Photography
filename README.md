@@ -132,6 +132,15 @@ This project has, at least, seven separate pages, the six main pages can be foun
 * [Visual Code Studio](https://code.visualstudio.com/)
   * Is a programming code editor created by Microsoft that I used extensively. It allows programmers to create, save and edit their code on their own pc's.
 
+* [Code Institute Full Template](https://github.com/Code-Institute-Org/gitpod-full-template)
+  * I used as a basic template to kick start my project.
+
+* [Canva](https://www.canva.com/)
+  * I used the Canva platform to make the style guide.
+
+* [TinyPNG](https://tinypng.com/)
+  * I used TinyPNG to compress my image files to try to reduce the loading time for each page.
+
 * [W3C markup validation service](https://validator.w3.org/)
   * Great tool to support throught the web development that helps to test and find issues on markup file.
 
@@ -143,6 +152,12 @@ This project has, at least, seven separate pages, the six main pages can be foun
 
 * [Stack Overflow](https://stackoverflow.com/)
   * Although it isn't a technology, I found a lot of guidance on Stack Overflow.
+
+* [MND Web Docs](https://developer.mozilla.org/en-US/docs/Web)
+  * DN Web Docs, previously Mozilla Developer Network and formerly Mozilla Developer Center, is a documentation repository for web developers used by Mozilla, Microsoft, Google, and Samsung.
+
+* [CSS-tricks](https://css-tricks.com/)
+  * Is a blog where you can find lots of tutorial and tricks to write a good css.
 
 ---
 ## Testing
