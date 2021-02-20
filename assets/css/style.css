@@ -36,10 +36,15 @@ hr {
     padding: 0;
 }
 
-.shadow {
-    -webkit-box-shadow: 3px 6px 9px 6px #636161;
-    -moz-box-shadow: 3px 6px 9px 6px #636161;
-    box-shadow: 3px 6px 9px 6px #636161;
+.img-centered {
+    object-fit: cover;
+    object-position: center;
+}
+
+.content-alignment {
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
 
 /* ----------------------------------Navbar */
@@ -74,7 +79,7 @@ nav ul {
 
 nav ul .nav-link {
     font-weight: 600;
-    padding: 20px 0 0 0;
+    padding-top: 20px;
     height: max-content;
     background-color: #ededed;
     letter-spacing: 2px;
@@ -106,9 +111,6 @@ nav .dropdown-item:hover {
 }
 
 .navbar-lg-sc ul {
-    display: flex;
-    justify-content: center;
-    align-content: center;
     margin: auto 0;
 }
 
@@ -120,17 +122,10 @@ nav .dropdown-item:hover {
     height: 40px;
 }
 
-.flags img {
-    width: 30px;
-    height: 30px;
-}
-
 /* ----------------------------------Hero carousel*/
 
 #carouselHeroSlidesOnly img {
     height: 100vh;
-    object-fit: cover;
-    object-position: center;
 }
 
 /* ----------------------------------middle content*/
@@ -142,8 +137,6 @@ nav .dropdown-item:hover {
 
 #first-md-content-img {
     margin: 30px 0 0 25px;
-    object-fit: cover;
-    object-position: center;
 }
 
 #text-md-content {
@@ -158,10 +151,9 @@ nav .dropdown-item:hover {
 }
 
 #bride-association-link {
-    object-fit: cover;
-    object-position: center;
     width: 60%;
     margin: -150px 0 0 550px;
+    filter: drop-shadow(3px 6px 9px #636161);
 }
 
 .profile_photo_mdContent {
@@ -181,8 +173,6 @@ nav .dropdown-item:hover {
     border: 1px solid #FF5B00;
     border-radius: 100%;
     filter: drop-shadow(3px 6px 9px #636161);
-    object-fit: cover;
-    object-position: center;
 }
 
 #marco_quote {
@@ -201,8 +191,7 @@ nav .dropdown-item:hover {
 }
 
 #bride-association-link:hover {
-    background: #FF5B00;
-    border-radius: 5%;
+    filter: drop-shadow(1px 3px 15px #FF5B00);
 }
 
 /* ----------------------------------Home Page Portfolio Links*/
@@ -226,7 +215,6 @@ nav .dropdown-item:hover {
 .portfolio-photo-links img {
     width: 100%;
     height: 500px;
-    object-fit: cover;
 }
 
 .top-left {
@@ -284,16 +272,9 @@ nav .dropdown-item:hover {
     padding-bottom: 25px;
 }
 
-.testimonial-photos {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .testimonial-photos img {
     width: 70%;
     height: 400px;
-    object-fit: cover;
     border: 1px solid #F7F2F2;
     filter: drop-shadow(3px 6px 9px #636161);
 }
@@ -331,14 +312,9 @@ nav .dropdown-item:hover {
 }
 
 .carousel-photos {
-    height: 80vh;;
+    height: 100vh;
     border-top: 1px solid #FF5B00;
     border-bottom: 1px solid #FF5B00;
-}
-
-.carousel-photos img {
-    object-fit: cover;
-    object-position: center;
 }
 
 .carousel-caption h5 {
@@ -346,11 +322,14 @@ nav .dropdown-item:hover {
     font-size: 40px;
     font-weight: bold;
     color: #FF5B00;
+    background: rgba(0, 0, 0, 0.5);
+    margin-bottom: 0;
 }
 
 .carousel-caption p {
     color: #FF5B00;
     font-weight: bold;
+    background: rgba(0, 0, 0, 0.5);
 }
 
 /* ----------------------------------Instagram section */
@@ -495,7 +474,7 @@ nav .dropdown-item:hover {
 
 .breadcrumb {
     position: fixed;
-    background-color: #F7F2F2;
+    background-color: #EDEDED;
     width: 100%;
     border-radius: 0%;
 }
@@ -504,6 +483,10 @@ nav .dropdown-item:hover {
     position: relative;
     top: 80px;
     z-index: 2;
+}
+
+.breadcrumb .breadcrumb-item a {
+    color: #FF5B00;
 }
 
 #gallery .col-12 img {
@@ -532,6 +515,10 @@ nav .dropdown-item:hover {
     opacity: 0.7;
 }
 
+.breadcrumb .breadcrumb-item a:hover {
+    font-weight: 800;
+}
+
 /* ----------------------------------Bio Page */
 
 #bio-header h2 {
@@ -545,8 +532,6 @@ nav .dropdown-item:hover {
 .hero-bio img {
     width: 100%;
     margin-top: 15px;
-    object-fit: cover;
-    object-position: center;
 }
 
 #introducing {
@@ -594,16 +579,12 @@ nav .dropdown-item:hover {
     margin-right: 20px;
     border: 1px solid #F7F2F2;
     filter: drop-shadow(3px 6px 9px #636161);
-    object-fit: cover;
-    object-position: center;
 }
 
 /* ----------------------------------Contact Page */
 
 .contact-img {
     width: 100%;
-    object-fit: cover;
-    object-position: center;
 }
 
 #contact-form {
@@ -708,7 +689,7 @@ footer a:hover {
     }
     #text-md-content {
         width: 200px;
-        padding: 30px 5x 0 0;
+        padding: 30px 5px 0 0;
     }
     #text-md-content p {
         margin-left: 5px;
@@ -751,12 +732,6 @@ footer a:hover {
 }
 
 @media screen and (min-width: 1200px) {
-    .hero-container {
-        background: url('../images/hero-img-home.jpg') center center/cover no-repeat;
-        width: 100%;
-        height: 600px;
-        padding: 0;
-    }
     #marco_quote {
         height: 180px;
         margin-top: 100px;
@@ -852,6 +827,9 @@ footer a:hover {
         padding-left: 5px;
         border-right: 3px solid #FF5B00;
     }
+    .carousel-photos {
+        height: 65vh;
+    }
     .modal-content {
         right: 2px;
     }
@@ -946,6 +924,9 @@ footer a:hover {
     }
     #first-md-content-img {
         display: none;
+    }
+    .carousel-photos {
+        height: 71vh;
     }
     #bio-middle-content p {
         margin: 25px 0 25px 50px;
