@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Wedding, Pre-weddind and Family Photography">
+    <meta name="keywords"
+        content="photography, fotografia, photographer, fotografo, wedding, casamento, pre-wedding, family photography, fotografia de familia, rio de janeiro">
+    <meta name="author" content="Sancler Zanella Full Stack Software Developer">
+
+    <link rel="canonical" href="https://www.marconevesfotografia.com">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="icon" href="../../images/readme/Icon.png" type="image/icon_type">
+    <link rel="stylesheet" href="../../css/style.css">
+
+    <script src="https://kit.fontawesome.com/169bbd8201.js" crossorigin="anonymous"></script>
+
+    <title>Photography | Marco Neves</title>
+</head>
+
+<body>
+
+    <!-- 1.Header section: Includes the Navbar with logo within. Navbar template from Bootstrap 4-->
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light no-gutters d-lg-none">
+
+            <!-- 1.1.Logo -->
+
+            <a class="navbar-brand" href="../../../index.html" aria-label="Logo, Go to Home Page">
+                <img class="logo" src="../../images/logo-no-background.png" alt="Marco Neves Photography Logo">
+            </a>
+
+            <!-- 1.2.Toggle Button -->
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- 1.3.Collapse navbar content for medium and small screens -->
+
+            <div class="collapse navbar-collapse nav-height" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../../index.html" aria-label="Go to home page">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                            aria-label="Dropdown menu which opens the wedding page link, pre-wedding page link and family photo page link">
+                            Portfolio
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="../../../wedding.html"
+                                aria-label="Go to weddings portfolio">Weddings</a>
+                            <a class="dropdown-item" href="../../../pre-wedding.html"
+                                aria-label="Go to pre-weddings portfolio">Pre-Weddings</a>
+                            <a class="dropdown-item" href="../../../family.html"
+                                aria-label="Go to family photo portfolio">Family Photos</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../../bio.html" aria-label="Go to biography page">Bio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../../contact.html" aria-label="Go to contact page">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- 1.4.Navbar for large screens -->
+
+        <nav class="navbar navbar-lg-sc navbar-expand-lg navbar-light no-gutters d-none d-lg-block">
+            <div class="collapse navbar-collapse nav-height">
+                <ul class="navbar-nav content-alignment">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../../index.html" aria-label="Go to home page">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown-lg-sc" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                            aria-label="Dropdown menu which opens the wedding page link, pre-wedding page link and family photo page link">
+                            Portfolio
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown-lg-sc">
+                            <a class="dropdown-item" href="../../../wedding.html"
+                                aria-label="Go to weddings portfolio">Weddings</a>
+                            <a class="dropdown-item" href="../../../pre-wedding.html"
+                                aria-label="Go to pre-weddings portfolio">Pre-Weddings</a>
+                            <a class="dropdown-item" href="../../../family.html"
+                                aria-label="Go to family photo portfolio">Family Photos</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navbar-brand" href="../../../index.html" aria-label="Logo, Go to Home Page">
+                            <img class="logo" src="../../images/logo-no-background.png"
+                                alt="Marco Neves Photography Logo">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../../bio.html" aria-label="Go to biography page">Bio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../../contact.html" aria-label="Go to contact page">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 2.Photo Album: Includes Image links that opens a photo carousel in modal from Bootstrap 4-->
+
+    <main>
+        <section aria-labelledby="breadcrumb-nav">
+            <h2 id="breadcrumb-nav" class="sr-only">Breadcrumb navigation</h2>
+            <div class="row no-gutters photo-container">
+                <div class="col">
+
+                    <!-- 2.1.Breadcrumb from Bootstrap 4-->
+
+                    <div class="row no-gutters">
+                        <div class="col">
+                            <div class="breadcrumb-album">
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb">
+                                        <li class="breadcrumb-item"><a href="../../../wedding.html#fabiane-flaviano"
+                                                aria-label="">Wedding</a>
+                                        </li>
+                                        <li class="breadcrumb-item active" aria-current="page">Fabiane and Flaviano
+                                            wedding album<span class="sr-only">(current page)</span></li>
+                                    </ol>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2.2.Album heading -->
+
+        <section aria-labelledby="album-heading">
+            <h2 id="album-heading" class="sr-only">Fabiane & Flaviano</h2>
+            <div class="row no-gutters couple-name">
+                <div class="col">
+                    <h2>Fabiane & Flaviano</h2>
+                    <p>A wedding full of emotions.
+                        Fabi in the week of the wedding was super anxious, but on the day everything was beautiful.
+                        The ceremony took place in the parish of São Pedro do apostolo in Venda das Pedras Itaborai-RJ.
+                        I am suspicious to say, but I have an immense love for these photos.
+                        since the pre-wedding session Fabiane and Flaviano embarked on my crazy ideas.
+                        In the end of ceremony, I gave the idea of ​​going to a place that is in the neighboring city
+                        where the ceremony was, and they promptly agreed, and needless to say that it resulted beautiful
+                        photos.
+                    </p>
+                    <hr>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2.3.Album gallery -->
+        <section aria-labelledby="album-gallery">
+            <h2 id="album-gallery" class="sr-only">Album gallery</h2>
+            <figure>
+                <div class="row no-gutters" id="gallery" data-toggle="modal" data-target="#exampleModal">
+                    <div class="col">
+                        <div class="row no-gutters">
+                            <div class="col-4">
+                                <img class="w-100 photos-hover img-centered"
+                                    src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-1.png" alt="First slide"
+                                    data-target="#carouselExample" data-slide-to="0">
+
+                                <div class="row no-gutters">
+                                    <div class="col-12">
+                                        <img class="w-100 photos-hover img-centered"
+                                            src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-2.png"
+                                            alt="Second slide" data-target="#carouselExample" data-slide-to="1">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-8">
+                                <img class="w-100 photos-hover img-centered"
+                                    src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-3.png" alt="Third slide"
+                                    data-target="#carouselExample" data-slide-to="2">
+                            </div>
+                        </div>
+
+                        <div class="row no-gutters container-fluid">
+                            <div class="col-4">
+                                <img class="w-100 photos-hover img-centered"
+                                    src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-4.png" alt="Fourth slide"
+                                    data-target="#carouselExample" data-slide-to="3">
+                            </div>
+                            <div class="col-4">
+                                <img class="w-100 photos-hover img-centered"
+                                    src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-5.png" alt="Fifth slide"
+                                    data-target="#carouselExample" data-slide-to="4">
+                            </div>
+                            <div class="col-4">
+                                <img class="w-100 photos-hover img-centered"
+                                    src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-6.png" alt="Sixth slide"
+                                    data-target="#carouselExample" data-slide-to="5">
+                            </div>
+                        </div>
+                        <div class="row no-gutters container-fluid">
+                            <div class="col-12">
+                                <img class="w-100 photos-hover img-centered"
+                                    src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-7.png" alt="Seventh slide"
+                                    data-target="#carouselExample" data-slide-to="6">
+                            </div>
+                        </div>
+                        <div class="row no-gutters container-fluid">
+                            <div class="col-4">
+                                <img class="w-100 photos-hover img-centered"
+                                    src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-8.png" alt="Eighth slide"
+                                    data-target="#carouselExample" data-slide-to="7">
+                            </div>
+                            <div class="col-4">
+                                <img class="w-100 photos-hover img-centered"
+                                    src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-9.png" alt="Nineth slide"
+                                    data-target="#carouselExample" data-slide-to="8">
+                            </div>
+                            <div class="col-4">
+                                <img class="w-100 photos-hover img-centered"
+                                    src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-10.png" alt="Tenth slide"
+                                    data-target="#carouselExample" data-slide-to="9">
+                            </div>
+                        </div>
+
+                        <div class="row no-gutters">
+                            <div class="col-4">
+                                <img class="w-100 photos-hover img-centered"
+                                    src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-11.png"
+                                    alt="Eleventh slide" data-target="#carouselExample" data-slide-to="10">
+
+                                <div class="row no-gutters">
+                                    <div class="col">
+                                        <img class="w-100 photos-hover img-centered"
+                                            src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-12.png"
+                                            alt="Twelfth slide" data-target="#carouselExample" data-slide-to="11">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-8">
+                                <img class="w-100 photos-hover img-centered"
+                                    src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-13.png"
+                                    alt="Thirteenth slide" data-target="#carouselExample" data-slide-to="12">
+                            </div>
+                        </div>
+                        <div class="row no-gutters container-fluid">
+                            <div class="col-4">
+                                <img class="w-100 photos-hover img-centered"
+                                    src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-14.png"
+                                    alt="Fourteenth slide" data-target="#carouselExample" data-slide-to="13">
+                            </div>
+                            <div class="col-4">
+                                <img class="w-100 photos-hover img-centered"
+                                    src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-15.png"
+                                    alt="Fifteenth slide" data-target="#carouselExample" data-slide-to="14">
+                            </div>
+                            <div class="col-4">
+                                <img class="w-100 photos-hover img-centered"
+                                    src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-16.png" alt="Sixth slide"
+                                    data-target="#carouselExample" data-slide-to="15">
+                            </div>
+                        </div>
+                        <div class="row no-gutters container-fluid">
+                            <div class="col-12">
+                                <img class="w-100 photos-hover img-centered"
+                                    src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-17.png"
+                                    alt="Seventeenth slide" data-target="#carouselExample" data-slide-to="16">
+                            </div>
+                        </div>
+
+
+                        <div class="row no-gutters">
+                            <div class="col-4">
+                                <img class="w-100 photos-hover img-centered"
+                                    src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-18.png"
+                                    alt="Eighteenth slide" data-target="#carouselExample" data-slide-to="17">
+
+                                <div class="row no-gutters">
+                                    <div class="col">
+                                        <img class="w-100 photos-hover img-centered"
+                                            src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-19.png"
+                                            alt="Nineteenth slide" data-target="#carouselExample" data-slide-to="18">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-8">
+                                <img class="w-100 photos-hover img-centered"
+                                    src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-20.png"
+                                    alt="Twentieth slide" data-target="#carouselExample" data-slide-to="19">
+                            </div>
+                        </div>
+
+                        <div class="row no-gutters container-fluid">
+                            <div class="col-4">
+                                <img class="w-100 photos-hover img-centered"
+                                    src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-21.png"
+                                    alt="Twenty-first slide" data-target="#carouselExample" data-slide-to="20">
+                            </div>
+                            <div class="col-4">
+                                <img class="w-100 photos-hover img-centered"
+                                    src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-22.png"
+                                    alt="Twenty-second slide" data-target="#carouselExample" data-slide-to="21">
+                            </div>
+                            <div class="col-4">
+                                <img class="w-100 photos-hover img-centered"
+                                    src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-23.png"
+                                    alt="Twenty-third slide" data-target="#carouselExample" data-slide-to="22">
+                            </div>
+                        </div>
+                        <div class="row no-gutters container-fluid">
+                            <div class="col-12">
+                                <img class="w-100 photos-hover img-centered"
+                                    src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-24.png"
+                                    alt="Twenty-fourth slide" data-target="#carouselExample" data-slide-to="23">
+                            </div>
+                        </div>
+                        <div class="row no-gutters container-fluid">
+                            <div class="col-4">
+                                <img class="w-100 photos-hover img-centered"
+                                    src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-25.png"
+                                    alt="Twenty-fifth slide" data-target="#carouselExample" data-slide-to="24">
+                            </div>
+                            <div class="col-4">
+                                <img class="w-100 photos-hover img-centered"
+                                    src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-26.png"
+                                    alt="Twenty-sixth slide" data-target="#carouselExample" data-slide-to="25">
+                            </div>
+                            <div class="col-4">
+                                <img class="w-100 photos-hover img-centered"
+                                    src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-27.png"
+                                    alt="Twenty-seventh slide" data-target="#carouselExample" data-slide-to="26">
+                            </div>
+                        </div>
+
+                        <div class="row no-gutters">
+                            <div class="col-4">
+                                <img class="w-100 photos-hover img-centered"
+                                    src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-28.png"
+                                    alt="Twenty-eighth slide" data-target="#carouselExample" data-slide-to="27">
+
+                                <div class="row no-gutters">
+                                    <div class="col">
+                                        <img class="w-100 photos-hover img-centered"
+                                            src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-29.png"
+                                            alt="Twenty-nineth slide" data-target="#carouselExample" data-slide-to="28">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-8">
+                                <img class="w-100 photos-hover img-centered"
+                                    src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-30.png"
+                                    alt="Thirtieth slide" data-target="#carouselExample" data-slide-to="29">
+                            </div>
+                        </div>
+                        <div class="row no-gutters container-fluid">
+                            <div class="col-4">
+                                <img class="w-100 photos-hover img-centered"
+                                    src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-31.png"
+                                    alt="Thirty-first slide" data-target="#carouselExample" data-slide-to="30">
+                            </div>
+                            <div class="col-4">
+                                <img class="w-100 photos-hover img-centered"
+                                    src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-32.png"
+                                    alt="Thirty-second slide" data-target="#carouselExample" data-slide-to="31">
+                            </div>
+                            <div class="col-4">
+                                <img class="w-100 photos-hover img-centered"
+                                    src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-33.png"
+                                    alt="Thirty-third slide" data-target="#carouselExample" data-slide-to="32">
+                            </div>
+                        </div>
+                        <div class="row no-gutters container-fluid">
+                            <div class="col-12">
+                                <img class="w-100 photos-hover img-centered"
+                                    src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-34.png"
+                                    alt="Thirty-fourth slide" data-target="#carouselExample" data-slide-to="33">
+                            </div>
+                        </div>
+                        <div class="row no-gutters container-fluid">
+                            <div class="col-4">
+                                <img class="w-100 photos-hover img-centered"
+                                    src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-35.png"
+                                    alt="Thirty-fifth slide" data-target="#carouselExample" data-slide-to="34">
+                            </div>
+                            <div class="col-4">
+                                <img class="w-100 photos-hover img-centered"
+                                    src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-36.png"
+                                    alt="Thirty-sixth slide" data-target="#carouselExample" data-slide-to="35">
+                            </div>
+                            <div class="col-4">
+                                <img class="w-100 photos-hover img-centered"
+                                    src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-37.png"
+                                    alt="Thirty-seventh slide" data-target="#carouselExample" data-slide-to="36">
+                            </div>
+                        </div>
+                        <div class="row no-gutters container-fluid">
+                            <div class="col-12">
+                                <img class="w-100 photos-hover img-centered"
+                                    src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-38.png"
+                                    alt="Thirty-eighth slide" data-target="#carouselExample" data-slide-to="37">
+                            </div>
+                        </div>
+
+                        <div class="row no-gutters">
+                            <div class="col-4">
+                                <img class="w-100 photos-hover img-centered"
+                                    src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-39.png"
+                                    alt="Thirty-nineth slide" data-target="#carouselExample" data-slide-to="38">
+
+                                <div class="row no-gutters">
+                                    <div class="col">
+                                        <img class="w-100 photos-hover img-centered"
+                                            src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-40.png"
+                                            alt="Fortieth slide" data-target="#carouselExample" data-slide-to="39">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-8">
+                                <img class="w-100 photos-hover img-centered"
+                                    src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-41.png"
+                                    alt="Forty-first slide" data-target="#carouselExample" data-slide-to="40">
+                            </div>
+                        </div>
+
+                        <div class="row no-gutters container-fluid">
+                            <div class="col-4">
+                                <img class="w-100 photos-hover img-centered"
+                                    src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-42.png"
+                                    alt="Forty-second slide" data-target="#carouselExample" data-slide-to="41">
+                            </div>
+                            <div class="col-4">
+                                <img class="w-100 photos-hover img-centered"
+                                    src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-43.png"
+                                    alt="Forty-second slide" data-target="#carouselExample" data-slide-to="42">
+                            </div>
+                            <div class="col-4">
+                                <img class="w-100 photos-hover img-centered"
+                                    src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-44.png"
+                                    alt="Forty-third slide" data-target="#carouselExample" data-slide-to="43">
+                            </div>
+                        </div>
+                        <div class="row no-gutters container-fluid">
+                            <div class="col-12">
+                                <img class="w-100 photos-hover img-centered"
+                                    src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-45.png"
+                                    alt="Forty-fourth slide" data-target="#carouselExample" data-slide-to="44">
+                            </div>
+                        </div>
+                        <div class="row no-gutters container-fluid">
+                            <div class="col-4">
+                                <img class="w-100 photos-hover img-centered"
+                                    src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-46.png"
+                                    alt="Forty-fifth slide" data-target="#carouselExample" data-slide-to="45">
+                            </div>
+                            <div class="col-4">
+                                <img class="w-100 photos-hover img-centered"
+                                    src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-47.png"
+                                    alt="Forty-seventh slide" data-target="#carouselExample" data-slide-to="46">
+                            </div>
+                            <div class="col-4">
+                                <img class="w-100 photos-hover img-centered"
+                                    src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-48.png"
+                                    alt="Forty-eighth slide" data-target="#carouselExample" data-slide-to="47">
+                            </div>
+                        </div>
+
+                        <div class="row no-gutters">
+                            <div class="col-4">
+                                <img class="w-100 photos-hover img-centered"
+                                    src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-49.png"
+                                    alt="Forty-nineth slide" data-target="#carouselExample" data-slide-to="48">
+
+                                <div class="row no-gutters">
+                                    <div class="col">
+                                        <img class="w-100 photos-hover img-centered"
+                                            src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-50.png"
+                                            alt="Fiftieth slide" data-target="#carouselExample" data-slide-to="49">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-8">
+                                <img class="w-100 photos-hover img-centered"
+                                    src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-51.png"
+                                    alt="Fifty first slide" data-target="#carouselExample" data-slide-to="50">
+                            </div>
+                        </div>
+                        <div class="row no-gutters container-fluid">
+                            <div class="col-4">
+                                <img class="w-100 photos-hover img-centered"
+                                    src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-52.png"
+                                    alt="Fifty second slide" data-target="#carouselExample" data-slide-to="51">
+                            </div>
+                            <div class="col-4">
+                                <img class="w-100 photos-hover img-centered"
+                                    src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-53.png"
+                                    alt="Fifty third slide" data-target="#carouselExample" data-slide-to="52">
+                            </div>
+                            <div class="col-4">
+                                <img class="w-100 photos-hover img-centered"
+                                    src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-54.png"
+                                    alt="Fifty fourth slide" data-target="#carouselExample" data-slide-to="53">
+                            </div>
+                        </div>
+                        <div class="row no-gutters container-fluid">
+                            <div class="col-12">
+                                <img class="w-100 photos-hover img-centered"
+                                    src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-55.png"
+                                    alt="Fifty fifth slide" data-target="#carouselExample" data-slide-to="54">
+                            </div>
+                        </div>
+
+
+                        <div class="row no-gutters">
+                            <div class="col-4">
+                                <img class="w-100 photos-hover img-centered"
+                                    src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-56.png"
+                                    alt="Fifty sixth slide" data-target="#carouselExample" data-slide-to="55">
+
+                                <div class="row no-gutters">
+                                    <div class="col">
+                                        <img class="w-100 photos-hover img-centered"
+                                            src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-57.png"
+                                            alt="Fifty seventh slide" data-target="#carouselExample" data-slide-to="56">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-8">
+                                <img class="w-100 photos-hover img-centered"
+                                    src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-58.png"
+                                    alt="Fifty eighth slide" data-target="#carouselExample" data-slide-to="57">
+                            </div>
+                        </div>
+
+                        <div class="row no-gutters container-fluid">
+                            <div class="col-4">
+                                <img class="w-100 photos-hover img-centered"
+                                    src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-59.png"
+                                    alt="Fifty nineth slide" data-target="#carouselExample" data-slide-to="58">
+                            </div>
+                            <div class="col-4">
+                                <img class="w-100 photos-hover img-centered"
+                                    src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-60.png"
+                                    alt="Sixtieth slide" data-target="#carouselExample" data-slide-to="59">
+                            </div>
+                            <div class="col-4">
+                                <img class="w-100 photos-hover img-centered"
+                                    src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-61.png"
+                                    alt="Sixty-first slide" data-target="#carouselExample" data-slide-to="60">
+                            </div>
+                        </div>
+                        <div class="row no-gutters container-fluid">
+                            <div class="col-6">
+                                <img class="w-100 photos-hover img-centered"
+                                    src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-62.png"
+                                    alt="Sixty-second slide" data-target="#carouselExample" data-slide-to="61">
+                            </div>
+                            <div class="col-6">
+                                <img class="w-100 photos-hover img-centered"
+                                    src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-63.png"
+                                    alt="Sixty-third slide" data-target="#carouselExample" data-slide-to="62">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- 2.4.Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <button type="button" class="close ml-auto" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            <div class="modal-body">
+
+                                <!-- 2.4.1.Photo carousel -->
+                                <div id="carouselExample" class="carousel slide" data-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img class="d-block w-100 img-centered"
+                                                src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-1.png"
+                                                alt="First slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100 img-centered"
+                                                src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-2.png"
+                                                alt="Second slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100 img-centered"
+                                                src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-3.png"
+                                                alt="Third slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100 img-centered"
+                                                src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-4.png"
+                                                alt="Fourth slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100 img-centered"
+                                                src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-5.png"
+                                                alt="Fifth slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100 img-centered"
+                                                src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-6.png"
+                                                alt="Sixth slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100 img-centered"
+                                                src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-7.png"
+                                                alt="Seventh slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100 img-centered"
+                                                src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-8.png"
+                                                alt="Eighth slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100 img-centered"
+                                                src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-9.png"
+                                                alt="Nineth slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100 img-centered"
+                                                src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-10.png"
+                                                alt="Tenth slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100 img-centered"
+                                                src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-11.png"
+                                                alt="Eleventh slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100 img-centered"
+                                                src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-12.png"
+                                                alt="Twelfth slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100 img-centered"
+                                                src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-13.png"
+                                                alt="Thirteenth slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100 img-centered"
+                                                src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-14.png"
+                                                alt="Fourteenth slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100 img-centered"
+                                                src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-15.png"
+                                                alt="Fifteenth slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100 img-centered"
+                                                src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-16.png"
+                                                alt="Sixteenth slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100 img-centered"
+                                                src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-17.png"
+                                                alt="Seventeenth slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100 img-centered"
+                                                src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-18.png"
+                                                alt="Eighteenth slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100 img-centered"
+                                                src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-19.png"
+                                                alt="Nineteenth slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100 img-centered"
+                                                src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-20.png"
+                                                alt="Twentieth slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100 img-centered"
+                                                src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-21.png"
+                                                alt="Twenty-first slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100 img-centered"
+                                                src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-22.png"
+                                                alt="Twenty-second slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100 img-centered"
+                                                src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-23.png"
+                                                alt="Twenty-third slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100 img-centered"
+                                                src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-24.png"
+                                                alt="Twenty-fourth slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100 img-centered"
+                                                src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-25.png"
+                                                alt="Twenty-fifth slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100 img-centered"
+                                                src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-26.png"
+                                                alt="Twenty-sixth slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100 img-centered"
+                                                src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-27.png"
+                                                alt="Twenty-seventh slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100 img-centered"
+                                                src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-28.png"
+                                                alt="Twenty-eighth slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100 img-centered"
+                                                src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-29.png"
+                                                alt="Twenty-nineth slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100 img-centered"
+                                                src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-30.png"
+                                                alt="Thirtieth slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100 img-centered"
+                                                src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-31.png"
+                                                alt="Thirty first slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100 img-centered"
+                                                src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-32.png"
+                                                alt="Thirty second slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100 img-centered"
+                                                src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-33.png"
+                                                alt="Thirty third slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100 img-centered"
+                                                src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-34.png"
+                                                alt="Thirty fourth slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100 img-centered"
+                                                src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-35.png"
+                                                alt="Thirty fifth slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100 img-centered"
+                                                src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-36.png"
+                                                alt="Thirty sixth slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100 img-centered"
+                                                src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-37.png"
+                                                alt="Thirty seventh slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100 img-centered"
+                                                src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-38.png"
+                                                alt="Thirty eighth slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100 img-centered"
+                                                src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-39.png"
+                                                alt="Thirty nineth slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100 img-centered"
+                                                src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-40.png"
+                                                alt="Fortieth slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100 img-centered"
+                                                src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-41.png"
+                                                alt="Forty-first slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100 img-centered"
+                                                src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-42.png"
+                                                alt="Forty-second slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100 img-centered"
+                                                src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-43.png"
+                                                alt="Forty-third slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100 img-centered"
+                                                src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-44.png"
+                                                alt="Forty-fourth slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100 img-centered"
+                                                src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-45.png"
+                                                alt="Forty-fifth slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100 img-centered"
+                                                src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-46.png"
+                                                alt="Forty-sixth slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100 img-centered"
+                                                src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-47.png"
+                                                alt="Forty-seventh slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100 img-centered"
+                                                src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-48.png"
+                                                alt="Forty-eighth slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100 img-centered"
+                                                src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-49.png"
+                                                alt="Forty-nineth slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100 img-centered"
+                                                src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-50.png"
+                                                alt="Fiftieth slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100 img-centered"
+                                                src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-51.png"
+                                                alt="Fifty first slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100 img-centered"
+                                                src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-52.png"
+                                                alt="Fifty second slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100 img-centered"
+                                                src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-53.png"
+                                                alt="Fifty third slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100 img-centered"
+                                                src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-54.png"
+                                                alt="Fifty fouth slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100 img-centered"
+                                                src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-55.png"
+                                                alt="Fifty fifth slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100 img-centered"
+                                                src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-56.png"
+                                                alt="Fifty sixth slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100 img-centered"
+                                                src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-57.png"
+                                                alt="Fifty seventh slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100 img-centered"
+                                                src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-58.png"
+                                                alt="Fifty eighth slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100 img-centered"
+                                                src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-59.png"
+                                                alt="Fifty nineth slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100 img-centered"
+                                                src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-60.png"
+                                                alt="Sixtieth slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100 img-centered"
+                                                src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-61.png"
+                                                alt="Sixty-first slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100 img-centered"
+                                                src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-62.png"
+                                                alt="Sixty-second slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100 img-centered"
+                                                src="../../images/albums/wedding/fabiane-flaviano/SEQUENCIA-63.png"
+                                                alt="Sixty-third slide">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </figure>
+        </section>
+    </main>
+
+    <!-- 3.Footer section: Includes Icons Links for Social media, Copyright, google translation api and the grid system from Bootstrap 4 -->
+
+    <footer>
+        <hr>
+
+        <!-- 3.1.Translate -->
+
+        <div class="row no-gutters">
+            <div class="translation">
+                <div class="flags">
+                    <span><img src="https://img.icons8.com/emoji/48/000000/united-kingdom-emoji.png"
+                            alt="United Kingdom flag" /></span><span><img
+                            src="https://img.icons8.com/emoji/48/000000/brazil-emoji.png" alt="Brazilian flag" /></span>
+                </div>
+                <div id="google_translate_element_id"></div>
+            </div>
+        </div>
+
+        <!-- 3.2.Icons Links for Social Media -->
+
+        <div class="row no-gutters">
+            <div class="col social-icons">
+                <a href="https://www.facebook.com/MARCONEVESFOTOGRAFIA/" target="_blank"
+                    aria-label="Go to Marco Neves Photography Facebook page (opens in new tab)"><i
+                        class="fab fa-facebook-square"></i></a><a
+                    href="https://www.instagram.com/marconevesfotografia/?hl=en" target="_blank"
+                    aria-label="Go to Marco Neves Photography Instagram page (opens in new tab)"><i
+                        class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <!-- 3.3.Copyright -->
+        <div class="row no-gutters">
+            <div class="col footer-copyright">
+                <p> © 2021 Marco Neves Fotografia </p>
+                <p>Design & Development by Sancler Zanella</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- External resources -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+    <script src="../../script/script.js"></script>
+</body>
+
+</html>

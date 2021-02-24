@@ -367,6 +367,8 @@ nav .dropdown-item:hover {
     align-content: center;
 }
 
+/* Hover effect source taken from mike tricking */
+
 .hovereffect {
     width: 100%;
     height: 100%;
@@ -495,6 +497,10 @@ nav .dropdown-item:hover {
 
 .breadcrumb .breadcrumb-item a {
     color: #FF5B00;
+}
+
+#gallery .col-8 img {
+    height: 100%;
 }
 
 #gallery .col-12 img {
