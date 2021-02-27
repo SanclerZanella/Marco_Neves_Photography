@@ -7,6 +7,10 @@ Welcome,
 
 Marco Neves is a Photographer with focus on weddings, couples and families photography. What does his job required is the necessity of eternalize unique, happy and very important moments of the life, but as important as this is show his job and art to the world, there is no better way to do this than having his own website to show his portfolio.
 
+[Click here to see the project live](https://www.marconevesfotografia.com)
+
+![responsiveness TEST](assets/images/readme/responsiveness.PNG)
+
 ## UX
 ---
 ### The purpose of the website is to present the follow values:
