@@ -211,7 +211,7 @@ I manually tested the live project by doing the following:
 
 I created my project on GitHub and used GitPod's development environment to write my code.
 
-To make my project viewable to others, I deployed my project to GitHub Pages with the following process:
+To make my project viewable to others, I deployed my project to Netlify with the following process:
 
   1. On [Netlify](https://www.netlify.com/) website, you click "Sign up";
   2. During the sign up process you will be asked to fork your account with your GitHub repository, then allow;
