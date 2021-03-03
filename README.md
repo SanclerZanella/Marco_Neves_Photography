@@ -205,6 +205,15 @@ I manually tested the live project by doing the following:
   2. I noted that the Mozilla Firefox render the photos better than the Google Chrome. I don't have yet the knowledge to fix it.
 
 ---
+## Accessibility
+
+  * Each image has an alt attribute describing the image's function
+  * Each anchor tag has an aria-label attribute describing where that link goes
+  * Each section has an aria-labelledby attribute
+  * Content has a contrast with the background to improve the visibility
+  * Contact form inputs have labels
+
+---
 ## Deployment
 
 ### Deploying my project

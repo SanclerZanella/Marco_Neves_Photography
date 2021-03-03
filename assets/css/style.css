@@ -77,9 +77,13 @@ nav ul {
     width: 115%;
 }
 
+.navbar-nav .nav-link {
+    padding-left: 10px;
+}
+
+
 nav ul .nav-link {
     font-weight: 600;
-    padding-top: 20px;
     height: max-content;
     background-color: #ededed;
     letter-spacing: 2px;
@@ -108,6 +112,10 @@ nav .dropdown-item:hover {
 
 .navbar-lg-sc {
     display: flex;
+}
+
+.navbar-lg-sc ul .nav-link {
+    padding: 20px;
 }
 
 .navbar-lg-sc ul {
@@ -317,7 +325,7 @@ nav .dropdown-item:hover {
     border-bottom: 1px solid #FF5B00;
 }
 
-.carousel-caption h5 {
+.carousel-caption h3 {
     font-family: 'Arizonia', sans-serif;
     font-size: 40px;
     font-weight: bold;
@@ -622,11 +630,13 @@ nav .dropdown-item:hover {
     font-weight: 600;
     color: #FF5B00;
     margin-bottom: 25px;
+    text-align: center;
 }
 
 #form-container label {
     font-weight: 600;
     color: #FF5B00;
+    text-align: left;
 }
 
 #form-container textarea {
@@ -690,7 +700,6 @@ footer p {
     font-size: 10px;
     text-align: center;
     font-weight: bold;
-    color: #FF5B00;
 }
 
 footer a:hover {
