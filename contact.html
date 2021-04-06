@@ -144,17 +144,17 @@
                         <fieldset>
                             <legend>Vamos tomar um café e conversar?!</legend>
 
+                            <small>Todos os campos que possuem um asterisco (*) na frente são obrigatórios</small><br>
                             <div class="form-row no-gutters">
-
                                 <div class="form-group col-md-6 col-lg-6">
-                                    <label for="name-field">Nome</label>
+                                    <label for="name-field">*Nome</label>
                                     <input type="text" class="form-control" placeholder="Seu nome" name="nome"
                                         id="name-field" pattern="^[a-zA-Z]*$" required aria-invalid="true">
                                     <small class="warning-msg"></small>
                                 </div>
 
                                 <div class="form-group col-md-6 col-lg-6">
-                                    <label for="lastname-field">Sobrenome</label>
+                                    <label for="lastname-field">*Sobrenome</label>
                                     <input type="text" class="form-control" placeholder="Seu sobrenome" name="sobrenome"
                                         id="lastname-field" pattern="^[a-zA-Z]*$" required aria-invalid="true">
                                     <small class="warning-msg"></small>
@@ -163,7 +163,7 @@
 
                             <div class="form-row form-group no-gutters">
                                 <div class="col">
-                                    <label for="email-field">Email</label>
+                                    <label for="email-field">*Email</label>
                                     <input type="email" class="form-control" placeholder="Entre com o seu email"
                                         name="email" id="email-field" required aria-invalid="true"
                                         aria-describedby="emailHelp">
@@ -183,7 +183,7 @@
 
                             <div class="form-row no-gutters">
                                 <div class="form-group col-12 col-lg-4">
-                                    <label for="kindevent-field">Tipo de evento</label>
+                                    <label for="kindevent-field">*Tipo de evento</label>
                                     <select name="kindofevent" class="form-control" id="kindevent-field" required
                                         aria-invalid="true">
                                         <option disabled selected value>-- selecione um evento --</option>
@@ -209,7 +209,7 @@
                             </div>
 
                             <div class="form-group">
-                                <label for="extrainfo-field">Conte-me mais sobre o seu evento</label><br>
+                                <label for="extrainfo-field">*Conte-me mais sobre o seu evento</label><br>
                                 <textarea name="extrainfo" class="form-control" id="extrainfo-field" cols="60" rows="10"
                                     required aria-invalid="true"></textarea>
                                 <small class="warning-msg"></small>
