@@ -643,6 +643,12 @@ nav .dropdown-item:hover {
     resize: none;
 }
 
+.warning-msg {
+    color: red;
+    font-weight: bold;
+    font-size: x-small;
+}
+
 #form-container button {
     background: #F7F2F2;
     color: #FF5B00;
