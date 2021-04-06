@@ -624,7 +624,6 @@ nav .dropdown-item:hover {
     width: 100%;
     display: grid;
     place-content: center;
-    text-align: center;
 }
 
 #form-container legend {
@@ -785,9 +784,9 @@ footer a:hover {
         height: 510px;
         margin-top: 100px;
     }
-    .translation {
-        margin-left: 550px;
-    }
+    #form-container legend {
+    text-align: center;
+}
 }
 
 @media screen and (max-width: 768px) {
