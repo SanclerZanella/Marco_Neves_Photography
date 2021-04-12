@@ -585,7 +585,7 @@ nav .dropdown-item:hover {
 
 #bio-quote {
   height: 470px;
-  margin: 50px 0 30px 30px;
+  margin: 50px 0 30px 50px;
   border-right: 3px solid #ff5b00;
   border-radius: 5%;
   text-align: center;
@@ -601,10 +601,10 @@ nav .dropdown-item:hover {
 }
 
 #bio-profile-photo {
-  width: 600px;
-  height: 600px;
+  width: 450px;
+  height: 450px;
   border-radius: 100%;
-  margin-right: 20px;
+  margin-right: 60px;
   border: 1px solid #f7f2f2;
   filter: drop-shadow(3px 6px 9px #636161);
 }
@@ -758,11 +758,11 @@ footer a:hover {
     height: 250px;
   }
   #bio-quote {
-    height: 600px;
+    height: 310px;
   }
   #bio-profile-photo {
-    width: 450px;
-    height: 600px;
+    width: 350px;
+    height: 400px;
     border-radius: 3%;
     margin-top: 50px;
   }
@@ -781,10 +781,10 @@ footer a:hover {
     margin-left: 30px;
   }
   #introducing {
-    height: 190px;
+    height: 200px;
   }
   #bio-quote {
-    height: 510px;
+    height: 250px;
     margin-top: 100px;
   }
   #form-container legend {
@@ -815,7 +815,7 @@ footer a:hover {
     right: 120px;
   }
   #introducing {
-    height: 310px;
+    height: 330px;
   }
   #bio-middle-content p {
     margin: 25px 0 25px 100px;
@@ -826,7 +826,7 @@ footer a:hover {
     margin: 15px 10px 0 10px;
   }
   #bio-quote {
-    height: 430px;
+    height: 230px;
     margin: 15px 30px 30px 30px;
     border-left: 3px solid #ff5b00;
     border-right: 3px solid #ff5b00;
@@ -897,7 +897,7 @@ footer a:hover {
   }
   #bio-quote {
     width: 95%;
-    height: 690px;
+    height: 390px;
     margin: 5px 10px 10px 10px;
   }
   #bio-end-content p {
@@ -945,7 +945,7 @@ footer a:hover {
   }
   #bio-quote {
     width: 95%;
-    height: 590px;
+    height: 290px;
     margin: 5px 10px 10px 10px;
   }
   #bio-end-content p {
@@ -1008,12 +1008,12 @@ footer a:hover {
     margin: 60px 0 0 50px;
   }
   #bio-quote {
-    height: 490px;
+    height: 220px;
     margin-top: 130px;
   }
   #bio-profile-photo {
-    width: 650px;
-    height: 650px;
+    width: 550px;
+    height: 550px;
     border-radius: 100%;
     margin-left: 20px;
     border: 1px solid #f7f2f2;

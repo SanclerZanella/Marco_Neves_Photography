@@ -1,269 +1,386 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Wedding, Pre-weddind and Family Photography"
+    />
+    <meta
+      name="keywords"
+      content="photography, fotografia, photographer, fotografo, wedding, casamento, pre-wedding, family photography, fotografia de familia, rio de janeiro"
+    />
+    <meta
+      name="author"
+      content="Sancler Zanella Full Stack Software Developer"
+    />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Wedding, Pre-weddind and Family Photography">
-    <meta name="keywords"
-        content="photography, fotografia, photographer, fotografo, wedding, casamento, pre-wedding, family photography, fotografia de familia, rio de janeiro">
-    <meta name="author" content="Sancler Zanella Full Stack Software Developer">
-
-    <link rel="canonical" href="https://www.marconevesfotografia.com">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <link rel="icon" href="assets/images/readme/Icon.png" type="image/icon_type">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="canonical" href="https://www.marconevesfotografia.com" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="icon"
+      href="assets/images/readme/Icon.png"
+      type="image/icon_type"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
 
     <title>Bio | Marco Neves</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <!-- 1.Header section: Includes the Navbar with logo within. Navbar template from Bootstrap 4-->
 
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light no-gutters d-lg-none">
+      <nav class="navbar navbar-expand-lg navbar-light no-gutters d-lg-none">
+        <!-- 1.1.Logo -->
 
-            <!-- 1.1.Logo -->
+        <a
+          class="navbar-brand"
+          href="index.html"
+          aria-label="Logo, Go to Home Page"
+        >
+          <img
+            class="logo"
+            src="assets/images/logo-no-background.png"
+            alt="Marco Neves Photography Logo"
+          />
+        </a>
 
-            <a class="navbar-brand" href="index.html" aria-label="Logo, Go to Home Page">
-                <img class="logo" src="assets/images/logo-no-background.png" alt="Marco Neves Photography Logo">
-            </a>
+        <!-- 1.2.Toggle Button -->
 
-            <!-- 1.2.Toggle Button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+        <!-- 1.3.Collapse navbar content for medium and small screens -->
 
-            <!-- 1.3.Collapse navbar content for medium and small screens -->
+        <div
+          class="collapse navbar-collapse nav-height"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html" aria-label="Go to home page"
+                >Início</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                aria-label="Dropdown menu which opens the wedding page link, pre-wedding page link and family photo page link"
+              >
+                Portfólio
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a
+                  class="dropdown-item"
+                  href="wedding.html"
+                  aria-label="Go to weddings portfolio"
+                  >Casamentos</a
+                >
+                <a
+                  class="dropdown-item"
+                  href="pre-wedding.html"
+                  aria-label="Go to pre-weddings portfolio"
+                  >Pre-Weddings</a
+                >
+                <a
+                  class="dropdown-item"
+                  href="family.html"
+                  aria-label="Go to family photo portfolio"
+                  >Fotos de família</a
+                >
+              </div>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                href="bio.html"
+                aria-label="Go to biography page"
+                >Bio <span class="sr-only">(current page)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="contact.html"
+                aria-label="Go to contact page"
+                >Contato</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
 
-            <div class="collapse navbar-collapse nav-height" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html" aria-label="Go to home page">Início</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                            aria-label="Dropdown menu which opens the wedding page link, pre-wedding page link and family photo page link">
-                            Portfólio
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="wedding.html"
-                                aria-label="Go to weddings portfolio">Casamentos</a>
-                            <a class="dropdown-item" href="pre-wedding.html"
-                                aria-label="Go to pre-weddings portfolio">Pre-Weddings</a>
-                            <a class="dropdown-item" href="family.html" aria-label="Go to family photo portfolio">Fotos
-                                de família</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="bio.html" aria-label="Go to biography page">Bio <span
-                                class="sr-only">(current page)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html" aria-label="Go to contact page">Contato</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+      <!-- 1.4.Navbar for large screens -->
 
-        <!-- 1.4.Navbar for large screens -->
-
-        <nav class="navbar navbar-lg-sc navbar-expand-lg navbar-light no-gutters d-none d-lg-block">
-            <div class="collapse navbar-collapse nav-height">
-                <ul class="navbar-nav content-alignment">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html" aria-label="Go to home page">Início</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-lg-sc" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                            aria-label="Dropdown menu which opens the wedding page link, pre-wedding page link and family photo page link">
-                            Portfólio
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown-lg-sc">
-                            <a class="dropdown-item" href="wedding.html"
-                                aria-label="Go to weddings portfolio">Casamentos</a>
-                            <a class="dropdown-item" href="pre-wedding.html"
-                                aria-label="Go to pre-weddings portfolio">Pre-Weddings</a>
-                            <a class="dropdown-item" href="family.html" aria-label="Go to family photo portfolio">Fotos
-                                de família</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="navbar-brand" href="index.html" aria-label="Logo, Go to Home Page">
-                            <img class="logo" src="assets/images/logo-no-background.png"
-                                alt="Marco Neves Photography Logo">
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="bio.html" aria-label="Go to biography page">Bio <span
-                                class="sr-only">(current page)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html" aria-label="Go to contact page">Contato</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+      <nav
+        class="navbar navbar-lg-sc navbar-expand-lg navbar-light no-gutters d-none d-lg-block"
+      >
+        <div class="collapse navbar-collapse nav-height">
+          <ul class="navbar-nav content-alignment">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html" aria-label="Go to home page"
+                >Início</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown-lg-sc"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                aria-label="Dropdown menu which opens the wedding page link, pre-wedding page link and family photo page link"
+              >
+                Portfólio
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown-lg-sc">
+                <a
+                  class="dropdown-item"
+                  href="wedding.html"
+                  aria-label="Go to weddings portfolio"
+                  >Casamentos</a
+                >
+                <a
+                  class="dropdown-item"
+                  href="pre-wedding.html"
+                  aria-label="Go to pre-weddings portfolio"
+                  >Pre-Weddings</a
+                >
+                <a
+                  class="dropdown-item"
+                  href="family.html"
+                  aria-label="Go to family photo portfolio"
+                  >Fotos de família</a
+                >
+              </div>
+            </li>
+            <li class="nav-item">
+              <a
+                class="navbar-brand"
+                href="index.html"
+                aria-label="Logo, Go to Home Page"
+              >
+                <img
+                  class="logo"
+                  src="assets/images/logo-no-background.png"
+                  alt="Marco Neves Photography Logo"
+                />
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                href="bio.html"
+                aria-label="Go to biography page"
+                >Bio <span class="sr-only">(current page)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="contact.html"
+                aria-label="Go to contact page"
+                >Contato</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
 
     <!-- 2.Bio Page Header section: Includes the Page Title and Hero image. Grid system from Bootstrap 4-->
 
     <main>
-        <section aria-labelledby="tittleHero-bio">
-            <h2 id="tittleHero-bio" class="sr-only">tittle and Hero of bio page</h2>
+      <section aria-labelledby="tittleHero-bio">
+        <h2 id="tittleHero-bio" class="sr-only">tittle and Hero of bio page</h2>
 
-            <!-- 2.1.Page Title -->
+        <!-- 2.1.Page Title -->
 
-            <div id="bio-header">
-                <div class="row no-gutters">
-                    <div class="col" aria-labelledby="title-bio">
-                        <h2 id="title-bio">Família, Amor e Fotografia</h2>
-                    </div>
-                </div>
-
-                <hr>
-
-                <!-- 2.2.Hero image -->
-
-                <div class="row no-gutters">
-                    <div class="col hero-bio">
-                        <figure>
-                            <img class="img-centered" src="assets/images/bio-page/mn-family.jpg"
-                                alt="Marco Neves family">
-                        </figure>
-                    </div>
-                </div>
-
-                <hr>
+        <div id="bio-header">
+          <div class="row no-gutters">
+            <div class="col" aria-labelledby="title-bio">
+              <h2 id="title-bio">Família, Amor e Fotografia</h2>
             </div>
-        </section>
+          </div>
 
-        <!-- 3.Bio Page middle content section: Includes an article. Grid system from Bootstrap 4-->
+          <hr />
 
-        <section>
-            <h2 class="sr-only"> Middle content</h2>
-            <div id="bio-middle-content">
-                <div class="row no-gutters">
-                    <div class="col">
-                        <article>
-                            <h2 class="sr-only"> Middle content text</h2>
-                            <div id="introducing">
-                                <p><span class="initial-letter">É</span> um imenso prazer ter você aqui.
-                                    Eu sou Marco, tenho 24 anos de idade, e sou apaixonado por fotos de casamento e
-                                    família. Desde de o primeiro contato com a fotografia, eu soube que isso era
-                                    exatamente
-                                    o caminho que eu queria seguir. Eu tenho uma enorme paixão em conhecer pessoas e
-                                    histórias,
-                                    eu quero que a minha fotografia seja baseada nessa minha paixão de contar histórias.
-                                    É realmente prazeroso sentar com amigos e ver fotos que relembram momentos incríveis
-                                    e pessoas especiais. E foi esse sentimento que me impulsionou a ser um fotógrafo
-                                    profissional,
-                                    portanto ser capaz de prover para as pessoas que amam a vida como eu, eternizar os
-                                    suas histórias.</p>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-                <hr>
+          <!-- 2.2.Hero image -->
+
+          <div class="row no-gutters">
+            <div class="col hero-bio">
+              <figure>
+                <img
+                  class="img-centered"
+                  src="assets/images/bio-page/mn-family.jpg"
+                  alt="Marco Neves family"
+                />
+              </figure>
             </div>
-        </section>
+          </div>
 
-        <!-- 4.End Page middle content section: Includes an quote and a profile photo. Grid system from Bootstrap 4-->
+          <hr />
+        </div>
+      </section>
 
-        <section aria-labelledby="end-content">
-            <h2 id="end-content" class="sr-only">End content of bio page</h2>
-            <div id="bio-end-content">
-                <div class="row no-gutters">
-                    <div class="col-lg-6 col-md-12 col-sm-12">
+      <!-- 3.Bio Page middle content section: Includes an article. Grid system from Bootstrap 4-->
 
-                        <!-- 4.1.Quote -->
-
-                        <article>
-                            <h2 class="sr-only"> Quote text</h2>
-                            <div id="bio-quote">
-                                <p> <span class="initial-letter">A</span> fotografia é o instrumento que eu uso para
-                                    contar as histórias de famílias.
-                                    A união de um casal, a espera e chegada de um novo membro da família e qualquer
-                                    outro membro especial da família
-                                    que mereça ser registrado. Quando estou fotografando, eu tenho a oportunidade de me
-                                    conectar com as pessoas, com suas
-                                    histórias. É um momento de aproximação, mais do que ser fotografado e dirigido é
-                                    também ser ouvido e bem recebido.
-                                    Eu me importo com a história de cada um, elas são a razão do meu trabalho, são o
-                                    sentido do que eu faço.
-                                </p> <br> <br>
-
-                                <blockquote>
-                                    <p><b>"A FOTOGRAFIA É PARA O FUTURO"</b> <br>(Fernanda Suhett)</p>
-                                </blockquote>
-
-                                <p>Esta frase mudou meu conceito sobre fotografia e abriu meus olhos para novos horizontes,
-                                    como o ensaio de gravidez. Eu entendi que fotos da barriga, partes do enxoval, vestidos esvoaçantes...,
-                                    são lindas memórias, entretanto, o ensaio de gravidez deve ir além, é muito interessante e satisfatório
-                                    quando nós expandimos o olhar para a família, porque assim terá mais histórias e emoções.
-                                  </p>
-                            </div>
-                        </article>
-                    </div>
-
-                    <!-- 4.2.Profile Photo -->
-
-                    <div class="col-lg-6 col-md-12 col-sm-12">
-                        <figure>
-                            <img class="img-centered" id="bio-profile-photo"
-                                src="assets/images/bio-page/bio-profile-photo.jpg" alt="Marco Neves Profile photo">
-                        </figure>
-                    </div>
+      <section>
+        <h2 class="sr-only">Middle content</h2>
+        <div id="bio-middle-content">
+          <div class="row no-gutters">
+            <div class="col">
+              <article>
+                <h2 class="sr-only">Middle content text</h2>
+                <div id="introducing">
+                  <p>
+                    <span class="initial-letter">É</span> um imenso prazer ter
+                    você aqui. Eu sou Marco, tenho 24 anos de idade, e sou
+                    apaixonado por fotos de casamento e família. Desde de o
+                    primeiro contato com a fotografia, eu soube que isso era
+                    exatamente o caminho que eu queria seguir. Eu tenho uma
+                    enorme paixão em conhecer pessoas e histórias, eu quero que
+                    a minha fotografia seja baseada nessa minha paixão de contar
+                    histórias. É realmente prazeroso sentar com amigos e ver
+                    fotos que relembram momentos incríveis e pessoas especiais.
+                    E foi esse sentimento que me impulsionou a ser um fotógrafo
+                    profissional. Podendo assim, proporcionar às pessoas que
+                    amam a vida tanto quanto eu, eternizar momentos da sua
+                    história.
+                  </p>
                 </div>
+              </article>
             </div>
-        </section>
+          </div>
+          <hr />
+        </div>
+      </section>
+
+      <!-- 4.End Page middle content section: Includes an quote and a profile photo. Grid system from Bootstrap 4-->
+
+      <section aria-labelledby="end-content">
+        <h2 id="end-content" class="sr-only">End content of bio page</h2>
+        <div id="bio-end-content">
+          <div class="row no-gutters">
+            <div class="col-lg-6 col-md-12 col-sm-12">
+              <!-- 4.1.Quote -->
+
+              <article>
+                <h2 class="sr-only">Quote text</h2>
+                <div id="bio-quote">
+                  <p>
+                    <span class="initial-letter">A</span> fotografia é o
+                    instrumento que eu uso para contar as histórias de famílias.
+                    A união de um casal, a espera e chegada de um novo membro da
+                    família e qualquer outro momento especial da família que
+                    mereça ser registrado. Quando estou fotografando, eu tenho a
+                    oportunidade de me conectar com as pessoas, com suas
+                    histórias. É um momento de aproximação, mais do que ser
+                    fotografado e dirigido é também ser ouvido e bem recebido.
+                    Eu me importo com a história de cada um, elas são a razão do
+                    meu trabalho, são o sentido do que eu faço.
+                  </p>
+                </div>
+              </article>
+            </div>
+
+            <!-- 4.2.Profile Photo -->
+
+            <div class="col-lg-6 col-md-12 col-sm-12">
+              <figure>
+                <img
+                  class="img-centered"
+                  id="bio-profile-photo"
+                  src="assets/images/bio-page/bio-profile-photo.jpg"
+                  alt="Marco Neves Profile photo"
+                />
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- 5.Footer section: Includes Icons Links for Social media, Copyright, google translation api and the grid system from Bootstrap 4 -->
 
     <footer>
-        <hr>
+      <hr />
 
-        <!-- 5.1.Icons Links for Social Media -->
+      <!-- 5.1.Icons Links for Social Media -->
 
-        <div class="row no-gutters">
-            <div class="col social-icons">
-                <a href="https://www.facebook.com/MARCONEVESFOTOGRAFIA/" target="_blank"
-                    aria-label="Go to Marco Neves Photography Facebook page (opens in new tab)" rel="noopener"> <i
-                        class="fab fa-facebook-square"></i>
-                </a>
-                <a href="https://www.instagram.com/marconevesfotografia/?hl=en" target="_blank"
-                    aria-label="Go to Marco Neves Photography Instagram page (opens in new tab)" rel="noopener">
-                    <i class="fab fa-instagram"></i>
-                </a>
-            </div>
+      <div class="row no-gutters">
+        <div class="col social-icons">
+          <a
+            href="https://www.facebook.com/MARCONEVESFOTOGRAFIA/"
+            target="_blank"
+            aria-label="Go to Marco Neves Photography Facebook page (opens in new tab)"
+            rel="noopener"
+          >
+            <i class="fab fa-facebook-square"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/marconevesfotografia/?hl=en"
+            target="_blank"
+            aria-label="Go to Marco Neves Photography Instagram page (opens in new tab)"
+            rel="noopener"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
         </div>
+      </div>
 
-        <!-- 5.2.Copyright -->
-        <div class="row no-gutters">
-            <div class="col footer-copyright">
-                <p> © 2021 Marco Neves Fotografia </p>
-                <p>Design & Development by Sancler Zanella</p>
-            </div>
+      <!-- 5.2.Copyright -->
+      <div class="row no-gutters">
+        <div class="col footer-copyright">
+          <p>© 2021 Marco Neves Fotografia</p>
+          <p>Design & Development by Sancler Zanella</p>
         </div>
+      </div>
     </footer>
 
     <!-- External resources -->
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
-        crossorigin="anonymous"></script>
-    <a href="https://icons8.com/icon/15509/brazil" aria-label="source link to icons"></a>
-    <script src="https://kit.fontawesome.com/169bbd8201.js" crossorigin="anonymous"></script>
-</body>
-
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
+    <a
+      href="https://icons8.com/icon/15509/brazil"
+      aria-label="source link to icons"
+    ></a>
+    <script
+      src="https://kit.fontawesome.com/169bbd8201.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
